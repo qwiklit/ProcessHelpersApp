@@ -1,0 +1,173 @@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<head>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="menus.css">
+<link rel="stylesheet" type="text/css" href="vladstyle.css">
+
+    <!-- Custom CSS -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Goudy+Bookletter+1911|Martel:900" rel="stylesheet">
+ 
+</head>
+<body>
+
+    
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Omniwire News Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#">The Latest</a>
+                    <ul class="submenu"> 
+                    </ul>
+                </li>
+                <li>
+                 <a href="#">United States</a>
+                     <ul class="submenu usasub">
+<a href="#">Alabama</a>
+<a href="#">Alaska</a>
+<a href="#">Arizona</a>
+<a href="#">Arkansas</a>
+<a href="#">California</a>
+<a href="#">Colorado</a>
+<a href="#">Connecticut</a>
+<a href="#">Delaware</a>
+<a href="#">Florida</a>
+<a href="#">Georgia</a>
+<a href="#">Hawaii</a>
+<a href="#">Idaho</a>
+<a href="#">Illinois</a>
+<a href="#">Indiana</a>
+<a href="#">Iowa</a>
+<a href="#">Kansas</a>
+<a href="#">Kentucky</a>
+<a href="#">Louisiana</a>
+<a href="#">Maine</a>
+<a href="#">Maryland</a>
+<a href="#">Massachusetts</a>
+<a href="#">Michigan</a>
+<a href="#">Minnesota</a>
+<a href="#">Mississippi</a>
+<a href="#">Missouri</a>
+<a href="#">Montana</a>
+<a href="#">Nebraska</a>
+<a href="#">Nevada</a>
+<a href="#">New Hampshire</a>
+<a href="#">New Jersey</a>
+<a href="#">New Mexico</a>
+<a href="#">New York</a>
+<a href="#">North Carolina</a>
+<a href="#">North Dakota</a>
+<a href="#">Ohio</a>
+<a href="#">Oklahoma</a>
+<a href="#">Oregon</a>
+<a href="#">Pennsylvania</a>
+<a href="#">Rhode Island</a>
+<a href="#">South Carolina</a>
+<a href="#">South Dakota</a>
+<a href="#">Tennessee</a>
+<a href="#">Texas</a>
+<a href="#">Utah</a>
+<a href="#">Vermont</a>
+<a href="#">Virginia</a>
+<a href="#">Washington</a>
+<a href="#">Washington D.C.</a> 
+<a href="#">West Virginia</a>
+<a href="#">Wisconsin</a>
+<a href="#">Wyoming</a>
+<a href="#">Puerto Rico</a>
+<a href="#">Pacific Islands</a>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Canada</a>
+                    <ul class="submenu canadasub">
+<a href="#">Alberta</a>
+<a href="#">British Columbia</a>
+<a href="#">Manitoba</a>
+<a href="#">New Brunswick</a>
+<a href="#">Newfoundland and Labrador</a>
+<a href="#">Northwest Territories</a>
+<a href="#">Nova Scotia</a>
+<a href="#">Nunavut</a>
+<a href="#">Ontario</a>
+<a href="#">Prince Edward Island</a>
+<a href="#">Quebec</a>
+<a href="#">Saskatchewan</a>
+<a href="#">Yukon</a>
+                    </ul>
+                </li>
+          
+               
+                <li>
+                    <a href="#">About us</a>
+                </li>
+            </ul>
+            
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                       <!-- /Make sure to keep all page content within the <code>#page-content-wrapper</code>-->
+                 
+        <!-- /#page-content-wrapper -->
+             
+   
+    <!-- /#wrapper -->
+
+
+<div id="navMenu"></div>
+
+<div class="mainheader">
+<a><img  href="#menu-toggle" class="hamburgerbutton" id="menu-toggle" src="images/hamburgermenu.png"></a>
+<h1 class="toptitle">Omniwire</h1>
+<hr />
+</div>
+    
+<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+<div id="tapestrylaunch"></div>
+
+<a href="vladivostokmainpage2.html">next</a>
+
+<a class="signature" href="http://janosgyerik.github.io/jquery-upvote/"><h6 style="text-align: center; color: black;">Omnipresent. Omnipotent. Omniwire.</h6></a>
+        </div>
+               </div>
+            </div>
+       </div>  
+         </div>
+</body>
+ 
+<script class="mainpage" src="mainpage.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>

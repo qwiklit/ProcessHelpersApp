@@ -1,0 +1,2094 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -91.641493,
+          49.408094
+        ],
+        "type": "Point"
+      },
+      "id": "010c7c8a1eb0b01de2069f9b04f613c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -93.02319,
+          52.509299
+        ],
+        "type": "Point"
+      },
+      "id": "0144cb2950618ddb99a0ddfc5287e1eb"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -91.624698,
+          48.756626
+        ],
+        "type": "Point"
+      },
+      "id": "02ba43454f585171713057f2b15403ff"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -79.725921,
+          43.661497
+        ],
+        "type": "Point"
+      },
+      "id": "0650bd57271267cc7c992d7d8c63a3ce"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -87.360317,
+          52.983239
+        ],
+        "type": "Point"
+      },
+      "id": "1e53d8b470e61c21332fd51b2d53e46d"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -82.428571,
+          52.92531
+        ],
+        "type": "Point"
+      },
+      "id": "214b4ea5e16ef53b54937c1c93ff22f6"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -87.892859,
+          52.218358
+        ],
+        "type": "Point"
+      },
+      "id": "3a973ea34a9ee0145f5c2ee20aa31e71"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -74.6381,
+          45.312961
+        ],
+        "type": "Point"
+      },
+      "id": "3eab05edce74fb711597afca9ef8c2d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -81.620682,
+          49.27842
+        ],
+        "type": "Point"
+      },
+      "id": "50866a007f20e1103d0d2e3f03090db4"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -90.966084,
+          53.926193
+        ],
+        "type": "Point"
+      },
+      "id": "53311b703066021f7de247cac0ca5680"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -91.916762,
+          50.097964
+        ],
+        "type": "Point"
+      },
+      "id": "53bd6a342814c75cf3b4b01208993095"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -86.950634,
+          49.708265
+        ],
+        "type": "Point"
+      },
+      "id": "54be31c65c397e2230f61ceaf3689570"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -77.861841,
+          45.085181
+        ],
+        "type": "Point"
+      },
+      "id": "5fadf9324aef5ac835596736466177a4"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -81.724291,
+          47.675529
+        ],
+        "type": "Point"
+      },
+      "id": "674852490c569d1004b6e2797d141535"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -89.816415,
+          53.03199
+        ],
+        "type": "Point"
+      },
+      "id": "698cbd615abccd9388eab9bb11ff52d2"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -76.352858,
+          45.434874
+        ],
+        "type": "Point"
+      },
+      "id": "7389b2c4733bd2987371d3bd0514d58f"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -93.323288,
+          53.060511
+        ],
+        "type": "Point"
+      },
+      "id": "774b076f64f8147196b2b917322a4415"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -87.635175,
+          55.990422
+        ],
+        "type": "Point"
+      },
+      "id": "7c94d12c3716d6510e7b28e89b134e80"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -94.302558,
+          52.099264
+        ],
+        "type": "Point"
+      },
+      "id": "8af3820d6b9575594fe03b09f71a3c95"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -89.299463,
+          52.932028
+        ],
+        "type": "Point"
+      },
+      "id": "91a237d5caed0afe006860399d5bf09a"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -81.327055,
+          48.477138
+        ],
+        "type": "Point"
+      },
+      "id": "address.10113066553243630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Bridge St W, Belleville, Ontario K8P 1H4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.386622,
+          44.162941
+        ],
+        "type": "Point"
+      },
+      "id": "address.10210022323815050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "860 William St, Cobourg, Ontario K9A 3B1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.190298,
+          43.970999
+        ],
+        "type": "Point"
+      },
+      "id": "address.10351486004856140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "7 Clark St W, Leamington, Ontario N8H 2Z7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.600476,
+          42.055819
+        ],
+        "type": "Point"
+      },
+      "id": "address.10579111244948710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "161 Elgin St, Ottawa, Ontario K2P 2L1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.692213,
+          45.421222
+        ],
+        "type": "Point"
+      },
+      "id": "address.10630060900419530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "67 King St, Bloomfield, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.14282,
+          44.008998
+        ],
+        "type": "Point"
+      },
+      "id": "address.10652004492543300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "440 Kent St W, Bethany, Ontario K9V 6C3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.764916,
+          44.34892
+        ],
+        "type": "Point"
+      },
+      "id": "address.10967303027269220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1911 Eglinton Ave E, Toronto, Ontario M1L 4P4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.289607,
+          43.72667
+        ],
+        "type": "Point"
+      },
+      "id": "address.11053111721389630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Hudson St, Blind River, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.955587,
+          46.187757
+        ],
+        "type": "Point"
+      },
+      "id": "address.11460880117453440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "425 Grand Ave W, Chatham-Kent, Ontario N7L 1M3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.207806,
+          42.403371
+        ],
+        "type": "Point"
+      },
+      "id": "address.11468473342527140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "27 Phipps St, Gore Bay, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.465289,
+          45.918417
+        ],
+        "type": "Point"
+      },
+      "id": "address.11537627306294820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "469 Montreal St, Kingston, Ontario K7K 7B6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.487085,
+          44.244992
+        ],
+        "type": "Point"
+      },
+      "id": "address.11538010003020330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "160 Water St, Mattawa, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.705683,
+          46.319263
+        ],
+        "type": "Point"
+      },
+      "id": "address.1172649310004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "29 2nd St W, Cornwall, Ontario K6J 1G3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.729934,
+          45.018179
+        ],
+        "type": "Point"
+      },
+      "id": "address.11937964402626530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "141 Gaspesie Rd, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.74664,
+          49.599423
+        ],
+        "type": "Point"
+      },
+      "id": "address.12105497381493370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "611 9th Ave E, Owen Sound, Ontario N4K 6Z4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.926277,
+          44.562208
+        ],
+        "type": "Point"
+      },
+      "id": "address.12109566371630470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "57 Holland St E, Bradford West Gwillimbury, Ontario L3Z 1X2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.562988,
+          44.115054
+        ],
+        "type": "Point"
+      },
+      "id": "address.12117503411688490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "74 Woolwich St, Guelph, Ontario N1H 2S8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.248169,
+          43.547251
+        ],
+        "type": "Point"
+      },
+      "id": "address.12122226201699460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "7765 Hurontario St, Brampton, Ontario L6W 3X1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.725299,
+          43.662607
+        ],
+        "type": "Point"
+      },
+      "id": "address.12182303859239100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "60 Queen St W, Toronto, Ontario M5H 2M4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.381584,
+          43.652241
+        ],
+        "type": "Point"
+      },
+      "id": "address.12533516418527730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "50 Eagle St W, Newmarket, Ontario L3Y 6B1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.480483,
+          44.044007
+        ],
+        "type": "Point"
+      },
+      "id": "address.12686997825073680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "470 Water St, Peterborough, Ontario K9H 2S3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.317515,
+          44.30814
+        ],
+        "type": "Point"
+      },
+      "id": "address.12905346401004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "18 4th Ave, Sioux Lookout, Ontario P8T 1G9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.916678,
+          50.102789
+        ],
+        "type": "Point"
+      },
+      "id": "address.12957994836747770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "415 Hunter St, Woodstock, Ontario N4S 6A5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.759715,
+          43.131433
+        ],
+        "type": "Point"
+      },
+      "id": "address.13005561311419790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "117 Dieppe St, Beardmore, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.536424,
+          49.779792
+        ],
+        "type": "Point"
+      },
+      "id": "address.13131154610757460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Revillion Rd, Moosonee, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.636336,
+          51.274344
+        ],
+        "type": "Point"
+      },
+      "id": "address.13159458846840470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "44 Queen St, Brantford, Ontario N3T 3B4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.266249,
+          43.140553
+        ],
+        "type": "Point"
+      },
+      "id": "address.13355757640458190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "59 Church St, Saint Catharines, Ontario L2R 3C4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.247587,
+          43.159978
+        ],
+        "type": "Point"
+      },
+      "id": "address.13464233555929270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "100 Langworthy St, Schreiber, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.267574,
+          48.815628
+        ],
+        "type": "Point"
+      },
+      "id": "address.13491275073794990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "360 Plouffe St, North Bay, Ontario P1B 2Z5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.46825,
+          46.316004
+        ],
+        "type": "Point"
+      },
+      "id": "address.13493832124944970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "130 Atwood Ave, Rainy River, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.587116,
+          48.720797
+        ],
+        "type": "Point"
+      },
+      "id": "address.13513976111259360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "85 Frederick St, Kitchener, Ontario N2H 2L5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.4863,
+          43.450778
+        ],
+        "type": "Point"
+      },
+      "id": "address.13575157818048970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "55 Main St W, Hamilton, Ontario L8P 1H6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.87182,
+          43.255574
+        ],
+        "type": "Point"
+      },
+      "id": "address.13637008087258980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "159 Cedar St, Greater Sudbury Grand Sudbury, Ontario P3E 3G4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.99138,
+          46.492232
+        ],
+        "type": "Point"
+      },
+      "id": "address.13646869990488110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "125 Brodie St N, Thunder Bay, Ontario P7C 3S3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.246642,
+          48.384941
+        ],
+        "type": "Point"
+      },
+      "id": "address.13648383195804440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "266 Main St, Thessalon, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.555752,
+          46.259317
+        ],
+        "type": "Point"
+      },
+      "id": "address.13722012886314420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "40 Broadway Ave, Wawa, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.770863,
+          47.99635
+        ],
+        "type": "Point"
+      },
+      "id": "address.1382273856784340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8 Fifth St W, Dunbar, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.186032,
+          44.89883
+        ],
+        "type": "Point"
+      },
+      "id": "address.13924288922744820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "311 Jarvis St, Toronto, Ontario M5B 2C4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.374831,
+          43.659326
+        ],
+        "type": "Point"
+      },
+      "id": "address.1393349684987880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "855 Major MacKenzie Dr E, Richmond Hill, Ontario L4B 3B8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.412563,
+          43.875992
+        ],
+        "type": "Point"
+      },
+      "id": "address.13961645535068480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5 Wadsworth Dr, Nipigon, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -88.267648,
+          49.004946
+        ],
+        "type": "Point"
+      },
+      "id": "address.14010758041473630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "253 Main St, Iroquois Falls, Ontario P0K 1G0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.686233,
+          48.757916
+        ],
+        "type": "Point"
+      },
+      "id": "address.14161220229314420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Water St, Kemptville, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.645599,
+          45.01618
+        ],
+        "type": "Point"
+      },
+      "id": "address.14341442159004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "316 William St, Centralia, Ontario N0M 1S7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.48178,
+          43.347895
+        ],
+        "type": "Point"
+      },
+      "id": "address.14561072271856140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Hemlo Dr, Marathon, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.371444,
+          48.72071
+        ],
+        "type": "Point"
+      },
+      "id": "address.14698323986978520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "155 Elm St, Greater Sudbury Grand Sudbury, Ontario P3C 1N3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.0016,
+          46.4927
+        ],
+        "type": "Point"
+      },
+      "id": "address.14736567473345140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "100 Tudhope St, Espanola, Ontario P5E 1S6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.770986,
+          46.265491
+        ],
+        "type": "Point"
+      },
+      "id": "address.14761427173153750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "315 Raglan St S, Renfrew, Ontario K7V 1R6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.681834,
+          45.470114
+        ],
+        "type": "Point"
+      },
+      "id": "address.14905735663460020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "48 Sixth Ave, Hornepayne, Ontario P0M 1Z0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.775139,
+          49.21533
+        ],
+        "type": "Point"
+      },
+      "id": "address.15213236449491360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "491 Steeles Ave E, Milton, Ontario L9T 1Y7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.887991,
+          43.527302
+        ],
+        "type": "Point"
+      },
+      "id": "address.15720960363858190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "149 Fourth Ave, Cochrane, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.028198,
+          49.062489
+        ],
+        "type": "Point"
+      },
+      "id": "address.16363828373173500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "279 Wellington St, Kingston, Ontario K7K 2Z2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.481313,
+          44.234564
+        ],
+        "type": "Point"
+      },
+      "id": "address.16371077257736470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "45 Main St E, Hamilton, Ontario L8N 2B7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.867395,
+          43.255045
+        ],
+        "type": "Point"
+      },
+      "id": "address.16951490498860700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "41 Court House Sq, Brockville, Ontario K6V 7N3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.685414,
+          44.590122
+        ],
+        "type": "Point"
+      },
+      "id": "address.17026880610231320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 Mulcaster St, Barrie, Ontario L4M 3P1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.684007,
+          44.392503
+        ],
+        "type": "Point"
+      },
+      "id": "address.17106526711978110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "700 Christina St N, Sarnia, Ontario N7V 1Y5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.394588,
+          42.989678
+        ],
+        "type": "Point"
+      },
+      "id": "address.17475579587578980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "70 Simcoe St, Peterborough, Ontario K9H 2K5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.316635,
+          44.305352
+        ],
+        "type": "Point"
+      },
+      "id": "address.17579333983596850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1107 Garrett St, Central Frontenac, Ontario K0H 2P0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.689811,
+          44.770944
+        ],
+        "type": "Point"
+      },
+      "id": "address.17645044335293620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5 Court St, Kingston, Ontario K7L 3E5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.488657,
+          44.227694
+        ],
+        "type": "Point"
+      },
+      "id": "address.17922608089614430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "59 Court St, L'Orignal, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.690182,
+          45.618981
+        ],
+        "type": "Point"
+      },
+      "id": "address.18119238640614430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1023 King St, L'Orignal, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.691579,
+          45.619914
+        ],
+        "type": "Point"
+      },
+      "id": "address.18136810054543300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "479 Government St, Dryden, Ontario P8N 2P6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -92.82609,
+          49.78731
+        ],
+        "type": "Point"
+      },
+      "id": "address.18356157152591870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "117 Tahgahoning Rd, Walpole Island 46, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.494086,
+          42.590959
+        ],
+        "type": "Point"
+      },
+      "id": "address.18782583360675450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "274 Josephine St, Blyth, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.312688,
+          43.887319
+        ],
+        "type": "Point"
+      },
+      "id": "address.2224976625318420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1 Courthouse Sq, Goderich, Ontario N7A 3Y7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.711216,
+          43.743065
+        ],
+        "type": "Point"
+      },
+      "id": "address.2237486170375410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3 Dominion St, Bracebridge, Ontario P1L 2G2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.310455,
+          45.040134
+        ],
+        "type": "Point"
+      },
+      "id": "address.2294357039200390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 Dundas St, London, Ontario N6A 6A3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.2536,
+          42.9832
+        ],
+        "type": "Point"
+      },
+      "id": "address.2544217605038520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "300 Ontario St, Burk's Falls, Ontario P0A 1C0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.410004,
+          45.622976
+        ],
+        "type": "Point"
+      },
+      "id": "address.2949408493011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1 Mississauga Dr, Manitouwadge, Ontario P0T 2C0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.830007,
+          49.127267
+        ],
+        "type": "Point"
+      },
+      "id": "address.2971854585063030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "39 Chambers St, Smiths Falls, Ontario K7A 3B8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.018503,
+          44.898247
+        ],
+        "type": "Point"
+      },
+      "id": "address.3015202230588390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "330 University Ave, Toronto, Ontario M5G 1R7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387576,
+          43.651698
+        ],
+        "type": "Point"
+      },
+      "id": "address.3750910974834960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2021 Plains Rd E, Burlington, Ontario L7R 3S9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.816618,
+          43.340245
+        ],
+        "type": "Point"
+      },
+      "id": "address.3969375964022900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "14 Albert St, Sundridge, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.40052,
+          45.766223
+        ],
+        "type": "Point"
+      },
+      "id": "address.4074832746226940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "200 Jarvis St, Fort Erie, Ontario L2A 6T4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.919213,
+          42.929997
+        ],
+        "type": "Point"
+      },
+      "id": "address.4412829807987880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "330 Wallace Ave N, Atwood, Ontario N4W 0A5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.951458,
+          43.733717
+        ],
+        "type": "Point"
+      },
+      "id": "address.4416796514013210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Mill St, Killaloe, Ontario K0J 2A0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.417623,
+          45.551719
+        ],
+        "type": "Point"
+      },
+      "id": "address.4566802596738550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "10 Louisa St, Orangeville, Ontario L9W 3P9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.10275,
+          43.919822
+        ],
+        "type": "Point"
+      },
+      "id": "address.470138493176180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "245 Windsor Ave, Windsor, Ontario N9A 7K6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.03506,
+          42.3171
+        ],
+        "type": "Point"
+      },
+      "id": "address.4773499082702270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "7 Milne St, Minden Hills, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.723908,
+          44.925441
+        ],
+        "type": "Point"
+      },
+      "id": "address.4777350732484200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "140 Government Rd E, Kirkland Lake, Ontario P2N 1A9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.021707,
+          48.15626
+        ],
+        "type": "Point"
+      },
+      "id": "address.4806107267293760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "102 E Main St, Welland, Ontario L3B 3W6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.247812,
+          42.992259
+        ],
+        "type": "Point"
+      },
+      "id": "address.4906939997633980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Wellington St, Saint Thomas, Ontario N5R 2P1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.201736,
+          42.775439
+        ],
+        "type": "Point"
+      },
+      "id": "address.5057453298736470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "88 Riverside Dr, Kapuskasing, Ontario P5N 1K8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.430126,
+          49.415995
+        ],
+        "type": "Point"
+      },
+      "id": "address.5700857976898710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.327199,
+          48.476813
+        ],
+        "type": "Point"
+      },
+      "id": "address.5727166341942820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Sheppard Ave E, Etobicoke, Ontario M2N 4V1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.407696,
+          43.761276
+        ],
+        "type": "Point"
+      },
+      "id": "address.5837318455386250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "444 Yonge St, Toronto, Ontario M5B 2H4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.384035,
+          43.660619
+        ],
+        "type": "Point"
+      },
+      "id": "address.5873298111747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "41 Dundas St W, Napanee, Ontario K7R 2M3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.951976,
+          44.246518
+        ],
+        "type": "Point"
+      },
+      "id": "address.6143566397062310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "200 Chatham St E, Windsor, Ontario N9A 2W3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.036988,
+          42.319227
+        ],
+        "type": "Point"
+      },
+      "id": "address.6178405191397030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "70 Wellington St, Brantford, Ontario N3T 2L9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.263559,
+          43.14123
+        ],
+        "type": "Point"
+      },
+      "id": "address.6197184128736470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "209 Beamish St W, Rocky Bay 1, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -88.131089,
+          49.439332
+        ],
+        "type": "Point"
+      },
+      "id": "address.6225977416521150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Chaffey St, Huntsville, Ontario P1H 1K1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.213628,
+          45.331325
+        ],
+        "type": "Point"
+      },
+      "id": "address.6251661396198580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "50 Frederick Hobson VC Dr, Norfolk County, Ontario N3Y 4R4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.3313,
+          42.839646
+        ],
+        "type": "Point"
+      },
+      "id": "address.6467679259921790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "426 Queen St E, Sault Ste. Marie, Ontario P6A 1Z7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.33239,
+          46.512025
+        ],
+        "type": "Point"
+      },
+      "id": "address.6515229709171550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "216 Water St, Kenora, Ontario P9N 4E9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.492333,
+          49.765799
+        ],
+        "type": "Point"
+      },
+      "id": "address.6598431694004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "115 Howey St, Red Lake, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -93.821254,
+          51.023127
+        ],
+        "type": "Point"
+      },
+      "id": "address.6635119005514040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "89 James St, Parry Sound, Ontario P2A 1S9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.033363,
+          45.346392
+        ],
+        "type": "Point"
+      },
+      "id": "address.6774789649728850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2201 Finch Ave W, Toronto, Ontario M9M 3B3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.536616,
+          43.752436
+        ],
+        "type": "Point"
+      },
+      "id": "address.7054136912545310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "35 Alice St, Brighton, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.735851,
+          44.042995
+        ],
+        "type": "Point"
+      },
+      "id": "address.7386988885348610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "605 Yonge St, Midland, Ontario L4R 4P3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.886987,
+          44.744774
+        ],
+        "type": "Point"
+      },
+      "id": "address.7393583649747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "44 Union St, Bloomfield, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.134074,
+          44.00764
+        ],
+        "type": "Point"
+      },
+      "id": "address.7461814051318740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "700 Memorial Ave, Orillia, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.426034,
+          44.583975
+        ],
+        "type": "Point"
+      },
+      "id": "address.7548621551351650"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 Main St, Dymond, Ontario P0J 1J0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.635153,
+          47.448994
+        ],
+        "type": "Point"
+      },
+      "id": "address.8092238104314420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "97 Thomas St W, Napanee, Ontario K7R 2H1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.956644,
+          44.24793
+        ],
+        "type": "Point"
+      },
+      "id": "address.8365595362142030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "333 Church St, Fort Frances, Ontario P9A 1E1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -93.395216,
+          48.608945
+        ],
+        "type": "Point"
+      },
+      "id": "address.8428974586929270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8500 Leslie St, Markham, Ontario L4B 3Z4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.382819,
+          43.843614
+        ],
+        "type": "Point"
+      },
+      "id": "address.8429429893324190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2338 Wikwemikong Way, Wikwemikong Unceded, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.720195,
+          45.804306
+        ],
+        "type": "Point"
+      },
+      "id": "address.8726919273040510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Wyndham St S, Guelph, Ontario N1H 3P7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.244937,
+          43.543721
+        ],
+        "type": "Point"
+      },
+      "id": "address.8797985028424190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "43 Drummond St E, Perth, Ontario K7H 1Y1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.244973,
+          44.898473
+        ],
+        "type": "Point"
+      },
+      "id": "address.8872695369250990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1 Huron St, Stratford, Ontario N5A 5S4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.985161,
+          43.371544
+        ],
+        "type": "Point"
+      },
+      "id": "address.8992418814004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "100 St Patrick St, Stratford, Ontario N5A 1X1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.981733,
+          43.368109
+        ],
+        "type": "Point"
+      },
+      "id": "address.9085345603053960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "200 Ontario Ave, Elliot Lake, Ontario P5A 2T2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.650178,
+          46.385754
+        ],
+        "type": "Point"
+      },
+      "id": "address.9115544378712030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "297 Pembroke St E, Pembroke, Ontario K8A 1N8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.106516,
+          45.827216
+        ],
+        "type": "Point"
+      },
+      "id": "address.9330392242992190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "122 Government Rd W, Kapuskasing, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.444889,
+          49.412944
+        ],
+        "type": "Point"
+      },
+      "id": "address.9701036189235670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "150 Bond St E, Oshawa, Ontario L1G 5L9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.859426,
+          43.90009
+        ],
+        "type": "Point"
+      },
+      "id": "address.9919303589656270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "207 Cayley St, Cargill, Ontario N0G 2V0, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.150022,
+          44.130901
+        ],
+        "type": "Point"
+      },
+      "id": "address.9924722269413970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "49 Huron St, Collingwood, Ontario L9Y 1C5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.21179,
+          44.505267
+        ],
+        "type": "Point"
+      },
+      "id": "address.9925933297004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -92.180949,
+          53.872862
+        ],
+        "type": "Point"
+      },
+      "id": "b042296840362ce38546893aa3119f74"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -81.685853,
+          52.214959
+        ],
+        "type": "Point"
+      },
+      "id": "b22119f61b858fcb996dec8cb4c031e4"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -89.884244,
+          53.824467
+        ],
+        "type": "Point"
+      },
+      "id": "ba151924a22954bbf8eaeda2620af335"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -89.037469,
+          50.303682
+        ],
+        "type": "Point"
+      },
+      "id": "be7c1cec6bbdbdf731f1236c609e78c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -88.516698,
+          52.745441
+        ],
+        "type": "Point"
+      },
+      "id": "bf58edfed1be9e0f3907c3c3a2f69aef"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -88.614299,
+          53.529077
+        ],
+        "type": "Point"
+      },
+      "id": "c9fa73de3295bf52db8efb362404266e"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -83.402499,
+          47.844727
+        ],
+        "type": "Point"
+      },
+      "id": "ccedddf800ec855bb88e6497e8368436"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -90.198181,
+          51.46506
+        ],
+        "type": "Point"
+      },
+      "id": "d803b5bcd7d4127f81b5a8cdb228ff66"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -91.778032,
+          53.401223
+        ],
+        "type": "Point"
+      },
+      "id": "d94352d1abdc00a4b9f6bf1ae5c33a1e"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -91.347114,
+          52.946543
+        ],
+        "type": "Point"
+      },
+      "id": "da8333a74ab798d198da7033659f67e8"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -81.640051,
+          52.291449
+        ],
+        "type": "Point"
+      },
+      "id": "e1c3a13fd3c1e8308a2fa4c424bbf6b3"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -79.932751,
+          46.368533
+        ],
+        "type": "Point"
+      },
+      "id": "e7db1eaea534d8013a7c413366008b01"
+    },
+    {
+      "type": "Feature",
+      "properties": {   "place_name": "",         "title": "",         "address": "",         "marker-color": "#ffd700",         "marker-symbol": "town-hall",         "marker-size": “medium”},
+      "geometry": {
+        "coordinates": [
+          -91.817042,
+          51.719476
+        ],
+        "type": "Point"
+      },
+      "id": "fd38214d97d18441a5b60735b54836eb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Angling Lake, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.5318,
+          53.8469
+        ],
+        "type": "Point"
+      },
+      "id": "place.11122017489877592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Peawanuck, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.4239,
+          55.0112
+        ],
+        "type": "Point"
+      },
+      "id": "place.13829724602180120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Pikangikum 14, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -93.995652,
+          51.812937
+        ],
+        "type": "Point"
+      },
+      "id": "place.3330282627818780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q6774247",
+        "place_name": "Marten Falls 65, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.92,
+          51.63
+        ],
+        "type": "Point"
+      },
+      "id": "place.8653363829486320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P0V 1N0, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.067986,
+          52.630826
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.1683326555141580"
+    }
+  ],
+  "type": "FeatureCollection"
+}

@@ -1,0 +1,4718 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title></title>
+  <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="vladstyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Lato:300" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+      .img {width: 200px;}
+      .leaflet-container h2 {text-align: center; font-size: 16px;}      
+      .leaflet-container h5 {font-size: 12px; font-weight: 200; text-align: center;}
+      .markertag {padding-bottom: 14px; padding-top: 9px;}
+    
+  </style>
+    
+    
+</head>
+<body>
+        <div id="wrapper">
+
+    <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                       <h2 style="font-weight: 200;">Home</h2>
+                    </a>
+                </li>
+                   <li>
+                    <a href="requestservice.html">Make a Request</a>
+                </li>
+                <li>
+                    <a href="profile.html">My Profile</a>
+                </li>
+                <li>
+                    <a href="courthouses.html">Find a Courthouse</a>
+                </li>
+                <li>
+                    <a href="processservers.html">Find a Server</a>
+                </li>
+             
+             
+                </li>
+
+
+                <li>
+                    <a href="file:///Users/philjames/Documents/OmniwireBootstrap/index.html">Newsroom</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Service</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </div> 
+
+<div id='map-tooltips-js' class='map'> </div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoicGhpbG5pY29sYXNqYW1lcyIsImEiOiJjaXYycGU2a2cwMmZ1MnlwNjZ4YWEzbzRmIn0.hZO-ZaGNzM4jXhbvqtOH3w';
+
+var mapTooltipsJS = L.mapbox.map('map-tooltips-js', 'mapbox.light')
+  .setView([47.8, -83], 6);
+var myLayer = L.mapbox.featureLayer().addTo(mapTooltipsJS);
+
+var geojson = [
+ 
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -91.641493,
+          49.408094
+        ],
+        "type": "Point"
+      },
+      "id": "010c7c8a1eb0b01de2069f9b04f613c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -93.02319,
+          52.509299
+        ],
+        "type": "Point"
+      },
+      "id": "0144cb2950618ddb99a0ddfc5287e1eb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -91.624698,
+          48.756626
+        ],
+        "type": "Point"
+      },
+      "id": "02ba43454f585171713057f2b15403ff"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -79.725921,
+          43.661497
+        ],
+        "type": "Point"
+      },
+      "id": "0650bd57271267cc7c992d7d8c63a3ce"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -87.360317,
+          52.983239
+        ],
+        "type": "Point"
+      },
+      "id": "1e53d8b470e61c21332fd51b2d53e46d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -82.428571,
+          52.92531
+        ],
+        "type": "Point"
+      },
+      "id": "214b4ea5e16ef53b54937c1c93ff22f6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -87.892859,
+          52.218358
+        ],
+        "type": "Point"
+      },
+      "id": "3a973ea34a9ee0145f5c2ee20aa31e71"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -74.6381,
+          45.312961
+        ],
+        "type": "Point"
+      },
+      "id": "3eab05edce74fb711597afca9ef8c2d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -81.620682,
+          49.27842
+        ],
+        "type": "Point"
+      },
+      "id": "50866a007f20e1103d0d2e3f03090db4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -90.966084,
+          53.926193
+        ],
+        "type": "Point"
+      },
+      "id": "53311b703066021f7de247cac0ca5680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -91.916762,
+          50.097964
+        ],
+        "type": "Point"
+      },
+      "id": "53bd6a342814c75cf3b4b01208993095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -86.950634,
+          49.708265
+        ],
+        "type": "Point"
+      },
+      "id": "54be31c65c397e2230f61ceaf3689570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -77.861841,
+          45.085181
+        ],
+        "type": "Point"
+      },
+      "id": "5fadf9324aef5ac835596736466177a4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -81.724291,
+          47.675529
+        ],
+        "type": "Point"
+      },
+      "id": "674852490c569d1004b6e2797d141535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -89.816415,
+          53.03199
+        ],
+        "type": "Point"
+      },
+      "id": "698cbd615abccd9388eab9bb11ff52d2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -76.352858,
+          45.434874
+        ],
+        "type": "Point"
+      },
+      "id": "7389b2c4733bd2987371d3bd0514d58f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -93.323288,
+          53.060511
+        ],
+        "type": "Point"
+      },
+      "id": "774b076f64f8147196b2b917322a4415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -87.635175,
+          55.990422
+        ],
+        "type": "Point"
+      },
+      "id": "7c94d12c3716d6510e7b28e89b134e80"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -94.302558,
+          52.099264
+        ],
+        "type": "Point"
+      },
+      "id": "8af3820d6b9575594fe03b09f71a3c95"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -89.299463,
+          52.932028
+        ],
+        "type": "Point"
+      },
+      "id": "91a237d5caed0afe006860399d5bf09a"
+    },
+    {
+      "type": "Feature",
+      "properties": { "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -81.327055,
+          48.477138
+        ],
+        "type": "Point"
+      },
+      "id": "address.10113066553243630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Bridge St W, Belleville, Ontario K8P 1H4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.386622,
+          44.162941
+        ],
+        "type": "Point"
+      },
+      "id": "address.10210022323815050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "860 William St, Cobourg, Ontario K9A 3B1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.190298,
+          43.970999
+        ],
+        "type": "Point"
+      },
+      "id": "address.10351486004856140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "7 Clark St W, Leamington, Ontario N8H 2Z7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.600476,
+          42.055819
+        ],
+        "type": "Point"
+      },
+      "id": "address.10579111244948710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "161 Elgin St, Ottawa, Ontario K2P 2L1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.692213,
+          45.421222
+        ],
+        "type": "Point"
+      },
+      "id": "address.10630060900419530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "67 King St, Bloomfield, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.14282,
+          44.008998
+        ],
+        "type": "Point"
+      },
+      "id": "address.10652004492543300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "440 Kent St W, Bethany, Ontario K9V 6C3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.764916,
+          44.34892
+        ],
+        "type": "Point"
+      },
+      "id": "address.10967303027269220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1911 Eglinton Ave E, Toronto, Ontario M1L 4P4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.289607,
+          43.72667
+        ],
+        "type": "Point"
+      },
+      "id": "address.11053111721389630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Hudson St, Blind River, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.955587,
+          46.187757
+        ],
+        "type": "Point"
+      },
+      "id": "address.11460880117453440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "425 Grand Ave W, Chatham-Kent, Ontario N7L 1M3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.207806,
+          42.403371
+        ],
+        "type": "Point"
+      },
+      "id": "address.11468473342527140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "27 Phipps St, Gore Bay, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.465289,
+          45.918417
+        ],
+        "type": "Point"
+      },
+      "id": "address.11537627306294820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "469 Montreal St, Kingston, Ontario K7K 7B6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.487085,
+          44.244992
+        ],
+        "type": "Point"
+      },
+      "id": "address.11538010003020330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "160 Water St, Mattawa, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.705683,
+          46.319263
+        ],
+        "type": "Point"
+      },
+      "id": "address.1172649310004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "29 2nd St W, Cornwall, Ontario K6J 1G3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.729934,
+          45.018179
+        ],
+        "type": "Point"
+      },
+      "id": "address.11937964402626530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "141 Gaspesie Rd, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.74664,
+          49.599423
+        ],
+        "type": "Point"
+      },
+      "id": "address.12105497381493370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "611 9th Ave E, Owen Sound, Ontario N4K 6Z4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.926277,
+          44.562208
+        ],
+        "type": "Point"
+      },
+      "id": "address.12109566371630470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "57 Holland St E, Bradford West Gwillimbury, Ontario L3Z 1X2, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.562988,
+          44.115054
+        ],
+        "type": "Point"
+      },
+      "id": "address.12117503411688490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "74 Woolwich St, Guelph, Ontario N1H 2S8, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.248169,
+          43.547251
+        ],
+        "type": "Point"
+      },
+      "id": "address.12122226201699460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "7765 Hurontario St, Brampton, Ontario L6W 3X1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.725299,
+          43.662607
+        ],
+        "type": "Point"
+      },
+      "id": "address.12182303859239100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "60 Queen St W, Toronto, Ontario M5H 2M4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.381584,
+          43.652241
+        ],
+        "type": "Point"
+      },
+      "id": "address.12533516418527730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "50 Eagle St W, Newmarket, Ontario L3Y 6B1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.480483,
+          44.044007
+        ],
+        "type": "Point"
+      },
+      "id": "address.12686997825073680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "470 Water St, Peterborough, Ontario K9H 2S3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.317515,
+          44.30814
+        ],
+        "type": "Point"
+      },
+      "id": "address.12905346401004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "18 4th Ave, Sioux Lookout, Ontario P8T 1G9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.916678,
+          50.102789
+        ],
+        "type": "Point"
+      },
+      "id": "address.12957994836747770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "415 Hunter St, Woodstock, Ontario N4S 6A5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.759715,
+          43.131433
+        ],
+        "type": "Point"
+      },
+      "id": "address.13005561311419790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "117 Dieppe St, Beardmore, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.536424,
+          49.779792
+        ],
+        "type": "Point"
+      },
+      "id": "address.13131154610757460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Revillion Rd, Moosonee, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.636336,
+          51.274344
+        ],
+        "type": "Point"
+      },
+      "id": "address.13159458846840470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "44 Queen St, Brantford, Ontario N3T 3B4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.266249,
+          43.140553
+        ],
+        "type": "Point"
+      },
+      "id": "address.13355757640458190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "59 Church St, Saint Catharines, Ontario L2R 3C4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.247587,
+          43.159978
+        ],
+        "type": "Point"
+      },
+      "id": "address.13464233555929270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "100 Langworthy St, Schreiber, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.267574,
+          48.815628
+        ],
+        "type": "Point"
+      },
+      "id": "address.13491275073794990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "360 Plouffe St, North Bay, Ontario P1B 2Z5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.46825,
+          46.316004
+        ],
+        "type": "Point"
+      },
+      "id": "address.13493832124944970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "130 Atwood Ave, Rainy River, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.587116,
+          48.720797
+        ],
+        "type": "Point"
+      },
+      "id": "address.13513976111259360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "85 Frederick St, Kitchener, Ontario N2H 2L5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.4863,
+          43.450778
+        ],
+        "type": "Point"
+      },
+      "id": "address.13575157818048970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "55 Main St W, Hamilton, Ontario L8P 1H6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.87182,
+          43.255574
+        ],
+        "type": "Point"
+      },
+      "id": "address.13637008087258980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "159 Cedar St, Greater Sudbury Grand Sudbury, Ontario P3E 3G4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.99138,
+          46.492232
+        ],
+        "type": "Point"
+      },
+      "id": "address.13646869990488110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "125 Brodie St N, Thunder Bay, Ontario P7C 3S3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.246642,
+          48.384941
+        ],
+        "type": "Point"
+      },
+      "id": "address.13648383195804440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "266 Main St, Thessalon, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.555752,
+          46.259317
+        ],
+        "type": "Point"
+      },
+      "id": "address.13722012886314420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "40 Broadway Ave, Wawa, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.770863,
+          47.99635
+        ],
+        "type": "Point"
+      },
+      "id": "address.1382273856784340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8 Fifth St W, Dunbar, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.186032,
+          44.89883
+        ],
+        "type": "Point"
+      },
+      "id": "address.13924288922744820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "311 Jarvis St, Toronto, Ontario M5B 2C4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.374831,
+          43.659326
+        ],
+        "type": "Point"
+      },
+      "id": "address.1393349684987880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "855 Major MacKenzie Dr E, Richmond Hill, Ontario L4B 3B8, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.412563,
+          43.875992
+        ],
+        "type": "Point"
+      },
+      "id": "address.13961645535068480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5 Wadsworth Dr, Nipigon, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -88.267648,
+          49.004946
+        ],
+        "type": "Point"
+      },
+      "id": "address.14010758041473630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "253 Main St, Iroquois Falls, Ontario P0K 1G0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.686233,
+          48.757916
+        ],
+        "type": "Point"
+      },
+      "id": "address.14161220229314420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Water St, Kemptville, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.645599,
+          45.01618
+        ],
+        "type": "Point"
+      },
+      "id": "address.14341442159004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "316 William St, Centralia, Ontario N0M 1S7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.48178,
+          43.347895
+        ],
+        "type": "Point"
+      },
+      "id": "address.14561072271856140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Hemlo Dr, Marathon, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.371444,
+          48.72071
+        ],
+        "type": "Point"
+      },
+      "id": "address.14698323986978520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "155 Elm St, Greater Sudbury Grand Sudbury, Ontario P3C 1N3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.0016,
+          46.4927
+        ],
+        "type": "Point"
+      },
+      "id": "address.14736567473345140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "100 Tudhope St, Espanola, Ontario P5E 1S6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.770986,
+          46.265491
+        ],
+        "type": "Point"
+      },
+      "id": "address.14761427173153750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "315 Raglan St S, Renfrew, Ontario K7V 1R6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.681834,
+          45.470114
+        ],
+        "type": "Point"
+      },
+      "id": "address.14905735663460020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "48 Sixth Ave, Hornepayne, Ontario P0M 1Z0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.775139,
+          49.21533
+        ],
+        "type": "Point"
+      },
+      "id": "address.15213236449491360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "491 Steeles Ave E, Milton, Ontario L9T 1Y7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.887991,
+          43.527302
+        ],
+        "type": "Point"
+      },
+      "id": "address.15720960363858190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "149 Fourth Ave, Cochrane, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.028198,
+          49.062489
+        ],
+        "type": "Point"
+      },
+      "id": "address.16363828373173500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "279 Wellington St, Kingston, Ontario K7K 2Z2, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.481313,
+          44.234564
+        ],
+        "type": "Point"
+      },
+      "id": "address.16371077257736470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "45 Main St E, Hamilton, Ontario L8N 2B7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.867395,
+          43.255045
+        ],
+        "type": "Point"
+      },
+      "id": "address.16951490498860700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "41 Court House Sq, Brockville, Ontario K6V 7N3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.685414,
+          44.590122
+        ],
+        "type": "Point"
+      },
+      "id": "address.17026880610231320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 Mulcaster St, Barrie, Ontario L4M 3P1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.684007,
+          44.392503
+        ],
+        "type": "Point"
+      },
+      "id": "address.17106526711978110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "700 Christina St N, Sarnia, Ontario N7V 1Y5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.394588,
+          42.989678
+        ],
+        "type": "Point"
+      },
+      "id": "address.17475579587578980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "70 Simcoe St, Peterborough, Ontario K9H 2K5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.316635,
+          44.305352
+        ],
+        "type": "Point"
+      },
+      "id": "address.17579333983596850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1107 Garrett St, Central Frontenac, Ontario K0H 2P0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.689811,
+          44.770944
+        ],
+        "type": "Point"
+      },
+      "id": "address.17645044335293620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5 Court St, Kingston, Ontario K7L 3E5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.488657,
+          44.227694
+        ],
+        "type": "Point"
+      },
+      "id": "address.17922608089614430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "59 Court St, L'Orignal, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.690182,
+          45.618981
+        ],
+        "type": "Point"
+      },
+      "id": "address.18119238640614430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1023 King St, L'Orignal, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.691579,
+          45.619914
+        ],
+        "type": "Point"
+      },
+      "id": "address.18136810054543300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "479 Government St, Dryden, Ontario P8N 2P6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -92.82609,
+          49.78731
+        ],
+        "type": "Point"
+      },
+      "id": "address.18356157152591870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "117 Tahgahoning Rd, Walpole Island 46, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.494086,
+          42.590959
+        ],
+        "type": "Point"
+      },
+      "id": "address.18782583360675450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "274 Josephine St, Blyth, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.312688,
+          43.887319
+        ],
+        "type": "Point"
+      },
+      "id": "address.2224976625318420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1 Courthouse Sq, Goderich, Ontario N7A 3Y7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.711216,
+          43.743065
+        ],
+        "type": "Point"
+      },
+      "id": "address.2237486170375410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3 Dominion St, Bracebridge, Ontario P1L 2G2, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.310455,
+          45.040134
+        ],
+        "type": "Point"
+      },
+      "id": "address.2294357039200390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 Dundas St, London, Ontario N6A 6A3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.2536,
+          42.9832
+        ],
+        "type": "Point"
+      },
+      "id": "address.2544217605038520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "300 Ontario St, Burk's Falls, Ontario P0A 1C0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.410004,
+          45.622976
+        ],
+        "type": "Point"
+      },
+      "id": "address.2949408493011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1 Mississauga Dr, Manitouwadge, Ontario P0T 2C0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.830007,
+          49.127267
+        ],
+        "type": "Point"
+      },
+      "id": "address.2971854585063030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "39 Chambers St, Smiths Falls, Ontario K7A 3B8, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.018503,
+          44.898247
+        ],
+        "type": "Point"
+      },
+      "id": "address.3015202230588390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "330 University Ave, Toronto, Ontario M5G 1R7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387576,
+          43.651698
+        ],
+        "type": "Point"
+      },
+      "id": "address.3750910974834960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2021 Plains Rd E, Burlington, Ontario L7R 3S9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.816618,
+          43.340245
+        ],
+        "type": "Point"
+      },
+      "id": "address.3969375964022900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "14 Albert St, Sundridge, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.40052,
+          45.766223
+        ],
+        "type": "Point"
+      },
+      "id": "address.4074832746226940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "200 Jarvis St, Fort Erie, Ontario L2A 6T4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.919213,
+          42.929997
+        ],
+        "type": "Point"
+      },
+      "id": "address.4412829807987880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "330 Wallace Ave N, Atwood, Ontario N4W 0A5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.951458,
+          43.733717
+        ],
+        "type": "Point"
+      },
+      "id": "address.4416796514013210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Mill St, Killaloe, Ontario K0J 2A0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.417623,
+          45.551719
+        ],
+        "type": "Point"
+      },
+      "id": "address.4566802596738550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "10 Louisa St, Orangeville, Ontario L9W 3P9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.10275,
+          43.919822
+        ],
+        "type": "Point"
+      },
+      "id": "address.470138493176180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "245 Windsor Ave, Windsor, Ontario N9A 7K6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.03506,
+          42.3171
+        ],
+        "type": "Point"
+      },
+      "id": "address.4773499082702270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "7 Milne St, Minden Hills, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.723908,
+          44.925441
+        ],
+        "type": "Point"
+      },
+      "id": "address.4777350732484200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "140 Government Rd E, Kirkland Lake, Ontario P2N 1A9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.021707,
+          48.15626
+        ],
+        "type": "Point"
+      },
+      "id": "address.4806107267293760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "102 E Main St, Welland, Ontario L3B 3W6, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.247812,
+          42.992259
+        ],
+        "type": "Point"
+      },
+      "id": "address.4906939997633980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Wellington St, Saint Thomas, Ontario N5R 2P1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.201736,
+          42.775439
+        ],
+        "type": "Point"
+      },
+      "id": "address.5057453298736470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "88 Riverside Dr, Kapuskasing, Ontario P5N 1K8, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.430126,
+          49.415995
+        ],
+        "type": "Point"
+      },
+      "id": "address.5700857976898710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.327199,
+          48.476813
+        ],
+        "type": "Point"
+      },
+      "id": "address.5727166341942820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Sheppard Ave E, Etobicoke, Ontario M2N 4V1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.407696,
+          43.761276
+        ],
+        "type": "Point"
+      },
+      "id": "address.5837318455386250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "444 Yonge St, Toronto, Ontario M5B 2H4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.384035,
+          43.660619
+        ],
+        "type": "Point"
+      },
+      "id": "address.5873298111747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "41 Dundas St W, Napanee, Ontario K7R 2M3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.951976,
+          44.246518
+        ],
+        "type": "Point"
+      },
+      "id": "address.6143566397062310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "200 Chatham St E, Windsor, Ontario N9A 2W3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.036988,
+          42.319227
+        ],
+        "type": "Point"
+      },
+      "id": "address.6178405191397030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "70 Wellington St, Brantford, Ontario N3T 2L9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.263559,
+          43.14123
+        ],
+        "type": "Point"
+      },
+      "id": "address.6197184128736470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "209 Beamish St W, Rocky Bay 1, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -88.131089,
+          49.439332
+        ],
+        "type": "Point"
+      },
+      "id": "address.6225977416521150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Chaffey St, Huntsville, Ontario P1H 1K1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.213628,
+          45.331325
+        ],
+        "type": "Point"
+      },
+      "id": "address.6251661396198580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "50 Frederick Hobson VC Dr, Norfolk County, Ontario N3Y 4R4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.3313,
+          42.839646
+        ],
+        "type": "Point"
+      },
+      "id": "address.6467679259921790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "426 Queen St E, Sault Ste. Marie, Ontario P6A 1Z7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.33239,
+          46.512025
+        ],
+        "type": "Point"
+      },
+      "id": "address.6515229709171550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "216 Water St, Kenora, Ontario P9N 4E9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.492333,
+          49.765799
+        ],
+        "type": "Point"
+      },
+      "id": "address.6598431694004010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "115 Howey St, Red Lake, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -93.821254,
+          51.023127
+        ],
+        "type": "Point"
+      },
+      "id": "address.6635119005514040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "89 James St, Parry Sound, Ontario P2A 1S9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.033363,
+          45.346392
+        ],
+        "type": "Point"
+      },
+      "id": "address.6774789649728850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2201 Finch Ave W, Toronto, Ontario M9M 3B3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.536616,
+          43.752436
+        ],
+        "type": "Point"
+      },
+      "id": "address.7054136912545310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "35 Alice St, Brighton, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.735851,
+          44.042995
+        ],
+        "type": "Point"
+      },
+      "id": "address.7386988885348610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "605 Yonge St, Midland, Ontario L4R 4P3, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.886987,
+          44.744774
+        ],
+        "type": "Point"
+      },
+      "id": "address.7393583649747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "44 Union St, Bloomfield, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.134074,
+          44.00764
+        ],
+        "type": "Point"
+      },
+      "id": "address.7461814051318740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "700 Memorial Ave, Orillia, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.426034,
+          44.583975
+        ],
+        "type": "Point"
+      },
+      "id": "address.7548621551351650"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 Main St, Dymond, Ontario P0J 1J0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.635153,
+          47.448994
+        ],
+        "type": "Point"
+      },
+      "id": "address.8092238104314420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "97 Thomas St W, Napanee, Ontario K7R 2H1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.956644,
+          44.24793
+        ],
+        "type": "Point"
+      },
+      "id": "address.8365595362142030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "333 Church St, Fort Frances, Ontario P9A 1E1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -93.395216,
+          48.608945
+        ],
+        "type": "Point"
+      },
+      "id": "address.8428974586929270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8500 Leslie St, Markham, Ontario L4B 3Z4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.382819,
+          43.843614
+        ],
+        "type": "Point"
+      },
+      "id": "address.8429429893324190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2338 Wikwemikong Way, Wikwemikong Unceded, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.720195,
+          45.804306
+        ],
+        "type": "Point"
+      },
+      "id": "address.8726919273040510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Wyndham St S, Guelph, Ontario N1H 3P7, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.244937,
+          43.543721
+        ],
+        "type": "Point"
+      },
+      "id": "address.8797985028424190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "43 Drummond St E, Perth, Ontario K7H 1Y1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.244973,
+          44.898473
+        ],
+        "type": "Point"
+      },
+      "id": "address.8872695369250990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1 Huron St, Stratford, Ontario N5A 5S4, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.985161,
+          43.371544
+        ],
+        "type": "Point"
+      },
+      "id": "address.8992418814004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "100 St Patrick St, Stratford, Ontario N5A 1X1, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.981733,
+          43.368109
+        ],
+        "type": "Point"
+      },
+      "id": "address.9085345603053960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "200 Ontario Ave, Elliot Lake, Ontario P5A 2T2, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.650178,
+          46.385754
+        ],
+        "type": "Point"
+      },
+      "id": "address.9115544378712030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "297 Pembroke St E, Pembroke, Ontario K8A 1N8, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.106516,
+          45.827216
+        ],
+        "type": "Point"
+      },
+      "id": "address.9330392242992190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "122 Government Rd W, Kapuskasing, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.444889,
+          49.412944
+        ],
+        "type": "Point"
+      },
+      "id": "address.9701036189235670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "150 Bond St E, Oshawa, Ontario L1G 5L9, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.859426,
+          43.90009
+        ],
+        "type": "Point"
+      },
+      "id": "address.9919303589656270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "207 Cayley St, Cargill, Ontario N0G 2V0, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.150022,
+          44.130901
+        ],
+        "type": "Point"
+      },
+      "id": "address.9924722269413970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "49 Huron St, Collingwood, Ontario L9Y 1C5, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.21179,
+          44.505267
+        ],
+        "type": "Point"
+      },
+      "id": "address.9925933297004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -92.180949,
+          53.872862
+        ],
+        "type": "Point"
+      },
+      "id": "b042296840362ce38546893aa3119f74"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -81.685853,
+          52.214959
+        ],
+        "type": "Point"
+      },
+      "id": "b22119f61b858fcb996dec8cb4c031e4"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -89.884244,
+          53.824467
+        ],
+        "type": "Point"
+      },
+      "id": "ba151924a22954bbf8eaeda2620af335"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -89.037469,
+          50.303682
+        ],
+        "type": "Point"
+      },
+      "id": "be7c1cec6bbdbdf731f1236c609e78c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -88.516698,
+          52.745441
+        ],
+        "type": "Point"
+      },
+      "id": "bf58edfed1be9e0f3907c3c3a2f69aef"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -88.614299,
+          53.529077
+        ],
+        "type": "Point"
+      },
+      "id": "c9fa73de3295bf52db8efb362404266e"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -83.402499,
+          47.844727
+        ],
+        "type": "Point"
+      },
+      "id": "ccedddf800ec855bb88e6497e8368436"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -90.198181,
+          51.46506
+        ],
+        "type": "Point"
+      },
+      "id": "d803b5bcd7d4127f81b5a8cdb228ff66"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -91.778032,
+          53.401223
+        ],
+        "type": "Point"
+      },
+      "id": "d94352d1abdc00a4b9f6bf1ae5c33a1e"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -91.347114,
+          52.946543
+        ],
+        "type": "Point"
+      },
+      "id": "da8333a74ab798d198da7033659f67e8"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -81.640051,
+          52.291449
+        ],
+        "type": "Point"
+      },
+      "id": "e1c3a13fd3c1e8308a2fa4c424bbf6b3"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -79.932751,
+          46.368533
+        ],
+        "type": "Point"
+      },
+      "id": "e7db1eaea534d8013a7c413366008b01"
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "place_name": "sample place",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"},
+      "geometry": {
+        "coordinates": [
+          -91.817042,
+          51.719476
+        ],
+        "type": "Point"
+      },
+      "id": "fd38214d97d18441a5b60735b54836eb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Angling Lake, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.5318,
+          53.8469
+        ],
+        "type": "Point"
+      },
+      "id": "place.11122017489877592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Peawanuck, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.4239,
+          55.0112
+        ],
+        "type": "Point"
+      },
+      "id": "place.13829724602180120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Pikangikum 14, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -93.995652,
+          51.812937
+        ],
+        "type": "Point"
+      },
+      "id": "place.3330282627818780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q6774247",
+        "place_name": "Marten Falls 65, Ontario, Canada",
+        "title": "",
+        "address": "",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.92,
+          51.63
+        ],
+        "type": "Point"
+      },
+      "id": "place.8653363829486320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P0V 1N0, Ontario, Canada",
+        "title": "Deer Lake Courthouse",
+        "address": "P0V 1N0, Ontario, Canada",
+        "marker-color": "#ffd700",
+        "marker-symbol": "town-hall",
+        "marker-size": "small"
+       
+      },
+      "geometry": {
+        "coordinates": [
+          -94.067986,
+          52.630826
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.1683326555141580"
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 Koprash Crt, Sault Ste. Marie, Ontario P6B 5S1, Canada",
+        "title": "Due North Process Services",
+        "address": "75 Koprash Crt, Sault Ste. Marie, Ontario P6B 5S1, Canada", 
+        "phone": "",
+        "website": "(705)971-3226",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -84.305148,
+          46.517725
+        ],
+        "type": "Point"
+      },
+      "id": "address.1011135035032970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2145 Sherobee Rd, Mississauga, Ontario L5A 2J6, Canada",
+        "title": "Advance Process Servers Inc.",
+        "address": "2145 Sherobee Rd, Mississauga, Ontario L5A 2J6, Canada", 
+        "phone": "(416) 887-9420",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.600754,
+          43.573412
+        ],
+        "type": "Point"
+      },
+      "id": "address.10451644668764060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "701 Rossland Rd E, Whitby, Ontario L1N 9E8, Canada",
+        "title": "Canadian Process Serving Inc.",
+        "address": "701 Rossland Rd E, Whitby, Ontario L1N 9E8, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "", 
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.938512,
+          43.899915
+        ],
+        "type": "Point"
+      },
+      "id": "address.10473605369686410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "266 Charlotte St, Peterborough, Ontario K9H 3Y8, Canada",
+        "title": "Canadian Process Serving Inc.",
+        "address": "266 Charlotte St, Peterborough, Ontario K9H 3Y8, Canada",
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.32465,
+          44.303639
+        ],
+        "type": "Point"
+      },
+      "id": "address.10923748052323840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "43 Sunnylea Cres, Guelph, Ontario N1E 4Y5, Canada",
+        "title": "Ace Serve Process Server",
+        "address": "43 Sunnylea Cres, Guelph, Ontario N1E 4Y5, Canada", 
+        "phone": "(519) 763-7335",
+        "website": "http://www.aceserve.ca/index.html",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.254697,
+          43.560061
+        ],
+        "type": "Point"
+      },
+      "id": "address.11309820026550110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "199 Victoria Rd S, Guelph, Ontario N1E 3J3, Canada",
+        "title": "Roussy Process Serving",
+        "address": "199 Victoria Rd S, Guelph, Ontario N1E 3J3, Canada", 
+        "phone": "+1 888-661-4414",
+        "website": "https://www.roussyprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.223849,
+          43.551939
+        ],
+        "type": "Point"
+      },
+      "id": "address.1144257007367640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1095 Cline Cres, Ottawa, Ontario K2C 2N9, Canada",
+        "title": "Couvrette Legal Services",
+        "address": "1095 Cline Cres, Ottawa, Ontario K2C 2N9, Canada", 
+        "phone": "(613) 769-3259",
+        "website": "http://www.couvrette.ca/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.75616,
+          45.363082
+        ],
+        "type": "Point"
+      },
+      "id": "address.11445624019485050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Vata Crt, Aurora, Ontario L4G 4B6, Canada",
+        "title": "York Regional Document Services",
+        "address": "4 Vata Crt, Aurora, Ontario L4G 4B6, Canada", 
+        "phone": "(905) 841-7510",
+        "website": "www.processserverscanada.com/websites/yorkdocumentservice.html",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.457216,
+          43.987146
+        ],
+        "type": "Point"
+      },
+      "id": "address.11472272323970500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1725 St Laurent Blvd, Ottawa, Ontario K1G 3V4, Canada",
+        "title": "Lormit Personal Services",
+        "address": "1725 St Laurent Blvd, Ottawa, Ontario K1G 3V4, Canada", 
+        "phone": "(613) 244-9097",
+        "website": "lormit.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.625502,
+          45.406125
+        ],
+        "type": "Point"
+      },
+      "id": "address.11685235638721710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3041 Dougall Ave, Windsor, Ontario N9E 1S3, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address": "3041 Dougall Ave, Windsor, Ontario N9E 1S3, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -83.013938,
+          42.272316
+        ],
+        "type": "Point"
+      },
+      "id": "address.11703261331148800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "142 Catharine St S, Hamilton, Ontario L8N 1R1, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address":  "142 Catharine St S, Hamilton, Ontario L8N 1R1, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.867594,
+          43.251043
+        ],
+        "type": "Point"
+      },
+      "id": "address.12100842856036750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "380 Woolwich St, Guelph, Ontario N1H 8L2, Canada",
+        "title": "Pro Serve Consultants",
+        "address": "380 Woolwich St, Guelph, Ontario N1H 8L2, Canada", 
+        "phone": "(519) 827-1919",
+        "website": "http://www.proserveconsultants.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.259823,
+          43.551895
+        ],
+        "type": "Point"
+      },
+      "id": "address.12122226201699460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8005 Financial Dr, Brampton, Ontario L6Y 5J2, Canada",
+        "title": "RGM Process Servers",
+        "address": "8005 Financial Dr, Brampton, Ontario L6Y 5J2, Canada", 
+        "phone": "(905) 455-5131",
+        "website": "rgmprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.770105,
+          43.631845
+        ],
+        "type": "Point"
+      },
+      "id": "address.12212599671802680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Toronto St, Toronto, Ontario M5C 3G1, Canada",
+        "title": "Dropdocs",
+        "address": "36 Toronto St, Toronto, Ontario M5C 3G1, Canada", 
+        "phone": "(647) 247-5205",
+        "website": "dropdocs.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.376612,
+          43.65051
+        ],
+        "type": "Point"
+      },
+      "id": "address.12292446625856480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Bracebridge, Ontario P1L 2G2, Canada",
+        "title": "Comission Service Inc.",
+        "address": "25 Ontario St, Bracebridge, Ontario P1L 2G2, Canada", 
+        "phone": "(705) 645-4662",
+        "website": "http://comserve.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.30995,
+          45.040115
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394588633011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "470 King St W, Toronto, Ontario M5V 1L8, Canada",
+        "title": "Law Process Service",
+        "address": "470 King St W, Toronto, Ontario M5V 1L8, Canada", 
+        "phone": "(905) 436-2007",
+        "website": "lawprocessservice.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.395742,
+          43.645324
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394656136199960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1326 Huron St, London, Ontario N5Y 1B4, Canada",
+        "title": "London Process Serving",
+        "address": "1326 Huron St, London, Ontario N5Y 1B4, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "http://www.canadianprocessserving.com/london-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -81.2151,
+          43.0205
+        ],
+        "type": "Point"
+      },
+      "id": "address.12511566306004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "210 Glendale Ave, Saint Catharines, Ontario L2T 3Y6, Canada",
+        "title": "Peninsula Bailiff and Process Servers",
+        "address": "210 Glendale Ave, Saint Catharines, Ontario L2T 3Y6, Canada", 
+        "phone": "(905) 646-3538",
+        "website": "http://www.pbps.net",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      
+      "geometry": {
+        "coordinates": [
+          -79.225607,
+          43.132337
+        ],
+        "type": "Point"
+      },
+      "id": "address.12538328125468710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "365 Evans Ave, Toronto, Ontario M8Z 1K5, Canada",
+        "title": "Borg Process Serving",
+        "address": "365 Evans Ave, Toronto, Ontario M8Z 1K5, Canada", 
+        "phone": "(416) 746-4437",
+        "website": "borgprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.522966,
+          43.615671
+        ],
+        "type": "Point"
+      },
+      "id": "address.12558595560061710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "35 Anvil St, Kitchener, Ontario N2P 1X6, Canada",
+        "title": "Tri-City Process Servers",
+        "address":  "35 Anvil St, Kitchener, Ontario N2P 1X6, Canada", 
+        "phone": "519-496-8277",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.439989,
+          43.389807
+        ],
+        "type": "Point"
+      },
+      "id": "address.12827099045512250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "128 St Clair St, Chatham-Kent, Ontario N7L 3J2, Canada",
+        "title": "Paralegal Solutions Professional Corporation",
+        "address": "128 St Clair St, Chatham-Kent, Ontario N7L 3J2, Canada", 
+        "phone": "(519) 350-2833",
+        "website": "paralegalsolutions.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.192667,
+          42.40896
+        ],
+        "type": "Point"
+      },
+      "id": "address.12875493630601670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "260 King St E, Hamilton, Ontario L8G 4P7, Canada",
+        "title": "J&S Process Service",
+        "address": "260 King St E, Hamilton, Ontario L8G 4P7, Canada", 
+        "phone": "(905) 570-2181",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.737596,
+          43.216433
+        ],
+        "type": "Point"
+      },
+      "id": "address.12961985010230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "140 King St E, Etobicoke, Ontario M5C 1G8, Canada",
+        "title": "Chase Process Servers",
+        "address": "140 King St E, Etobicoke, Ontario M5C 1G8, Canada", 
+        "phone": "(905) 317-3411",
+        "website": "chaseprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.372325,
+          43.650616
+        ],
+        "type": "Point"
+      },
+      "id": "address.13264167903230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Main St E, Milton, Ontario L9T 2M6, Canada",
+        "title": "CitiServ Inc",
+        "address": "420 Main St E, Milton, Ontario L9T 2M6, Canada", 
+        "phone": "(416) 450-5791",
+        "website": "http://citi-serv.com/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.877728,
+          43.51768
+        ],
+        "type": "Point"
+      },
+      "id": "address.13376456170860700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1070 Main St W, Ancaster, Ontario L8S 1N9, Canada",
+        "title": "Ham-Tor Serve",
+        "address": "1070 Main St W, Ancaster, Ontario L8S 1N9, Canada", 
+        "phone": "(905) 529-5888",
+        "website": "ham-tor-serve.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.908951,
+          43.258528
+        ],
+        "type": "Point"
+      },
+      "id": "address.13637008087258980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "196 Metcalfe St, Ottawa, Ontario K2P 1P6, Canada",
+        "title": "MCA Process Service",
+        "address": "196 Metcalfe St, Ottawa, Ontario K2P 1P6, Canada", 
+        "phone": "(613) 791-4954",
+        "website": "www.mcaprocessservice.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.693311,
+          45.418097
+        ],
+        "type": "Point"
+      },
+      "id": "address.13749582006827940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "916 Princess St, Kingston, Ontario K7L 5G3, Canada",
+        "title": "Frontenac Legal Services",
+        "address": "916 Princess St, Kingston, Ontario K7L 5G3, Canada", 
+        "phone": "(613) 877-2049",
+        "website": "frontenaclegal.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -76.512232,
+          44.24146
+        ],
+        "type": "Point"
+      },
+      "id": "address.13832478497798940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "380 Pelissier St, Windsor, Ontario N9A 6W8, Canada",
+        "title": "City County Process Service",
+        "address": "380 Pelissier St, Windsor, Ontario N9A 6W8, Canada", 
+        "phone": "(519) 250-8862",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -83.039432,
+          42.316357
+        ],
+        "type": "Point"
+      },
+      "id": "address.13841777188650480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Toronto, Ontario M5A 4L6, Canada",
+        "title": "Comission Service Inc.",
+        "address": "25 Ontario St, Toronto, Ontario M5A 4L6, Canada", 
+        "phone": "(705) 645-4662",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.36609,
+          43.652418
+        ],
+        "type": "Point"
+      },
+      "id": "address.13995784675011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "157 Adelaide St W, Toronto, Ontario M5H 3B9, Canada",
+        "title": "Canadian Process Serving",
+        "address": "157 Adelaide St W, Toronto, Ontario M5H 3B9, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/toronto-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.385063,
+          43.648821
+        ],
+        "type": "Point"
+      },
+      "id": "address.14155360459436670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Colborne St, Toronto, Ontario M5E 1E3, Canada",
+        "title": "Independent Process Servers",
+        "address": "47 Colborne St, Toronto, Ontario M5E 1E3, Canada", 
+        "phone": "(416) 860-1200",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.374789,
+          43.648954
+        ],
+        "type": "Point"
+      },
+      "id": "address.15169542503921290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1300 King St E, Oshawa, Ontario L1H 7Y8, Canada",
+        "title": "Oshawa Process Servers",
+        "address": "1300 King St E, Oshawa, Ontario L1H 7Y8, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/oshawa-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.816652,
+          43.90711
+        ],
+        "type": "Point"
+      },
+      "id": "address.15178768592230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "850 Minto St, Lasalle, Ontario N9J 3M1, Canada",
+        "title": "Dependable Process Serving",
+        "address": "850 Minto St, Lasalle, Ontario N9J 3M1, Canada", 
+        "phone": "(519) 978-9877",
+        "website": "dependableprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -83.078002,
+          42.242883
+        ],
+        "type": "Point"
+      },
+      "id": "address.15564866975764310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "224 King St W, Hamilton, Ontario L8R 2R5, Canada",
+        "title": "Swift Process Service",
+        "address": "224 King St W, Hamilton, Ontario L8R 2R5, Canada", 
+        "phone": "(905) 528-7412",
+        "website": "http://www.swiftps.com/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.875984,
+          43.258606
+        ],
+        "type": "Point"
+      },
+      "id": "address.15635389298199960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Canadian Process Serving | 4 Alliance Blvd, Barrie, Ontario L4M 5K2, Canada",
+        "title": "Canadian Process Serving",
+        "address": "4 Alliance Blvd, Barrie, Ontario L4M 5K2, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/barrie-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.684723,
+          44.407974
+        ],
+        "type": "Point"
+      },
+      "id": "address.16401818194717080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 John St, Toronto, Ontario M5V 2E1, Canada",
+        "title": "Stamped Process Services",
+        "address": "80 John St, Toronto, Ontario M5V 2E1, Canada", 
+        "phone": "(416) 300-5434",
+        "website": "stampedservices.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.390268,
+          43.646841
+        ],
+        "type": "Point"
+      },
+      "id": "address.16592746790851980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1560 Brimley Rd, Toronto, Ontario M1P 3G9, Canada",
+        "title": "",
+        "address": "1560 Brimley Rd, Toronto, Ontario M1P 3G9, Canada", 
+        "phone": "",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.261981,
+          43.770505
+        ],
+        "type": "Point"
+      },
+      "id": "address.16597446448434750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "13 Collier St, Barrie, Ontario L4M 3E6, Canada",
+        "title": "Dominion Process Service",
+        "address": "13 Collier St, Barrie, Ontario L4M 3E6, Canada", 
+        "phone": "+1 888-301-7378",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.68984,
+          44.39039
+        ],
+        "type": "Point"
+      },
+      "id": "address.16803981785250940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1015 Socrates Cres, Windsor, Ontario N9G 2P1, Canada",
+        "title": "Essex Process Service",
+        "address": "1015 Socrates Cres, Windsor, Ontario N9G 2P1, Canada", 
+        "phone": "(519) 250-9669",
+        "website": "essexprocess.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.982393,
+          42.257984
+        ],
+        "type": "Point"
+      },
+      "id": "address.17304215691174400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "11 Grant St, Toronto, Ontario M4M 2H4, Canada",
+        "title": "Bonafide Paralegal",
+        "address": "11 Grant St, Toronto, Ontario M4M 2H4, Canada", 
+        "phone": "(416) 462-3633",
+        "website": "bonafideparalegal.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.348465,
+          43.659693
+        ],
+        "type": "Point"
+      },
+      "id": "address.17811975584580530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 First Ave, Orangeville, Ontario L9W 4N7, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address": "75 First Ave, Orangeville, Ontario L9W 4N7, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "http://www.canadianprocessserving.com/orangeville-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.090365,
+          43.921849
+        ],
+        "type": "Point"
+      },
+      "id": "address.18780914109860610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "525 Highland Rd W, Kitchener, Ontario N2M 5P4, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address": "525 Highland Rd W, Kitchener, Ontario N2M 5P4, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/kitchener-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.515797,
+          43.434565
+        ],
+        "type": "Point"
+      },
+      "id": "address.18991516657322410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "86 Emms Dr, Barrie, Ontario L4N 8H4, Canada",
+        "title": "Quick Serve Document Service",
+        "address": "86 Emms Dr, Barrie, Ontario L4N 8H4, Canada", 
+        "phone": "(705) 734-8454",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.712051,
+          44.345354
+        ],
+        "type": "Point"
+      },
+      "id": "address.2582466186149420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "37 McCreery Rd, Ingersoll, Ontario N5C 4G1, Canada",
+        "title": "Oxford Process Servers",
+        "address": "37 McCreery Rd, Ingersoll, Ontario N5C 4G1, Canada", 
+        "phone": "(519) 425-0423",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.900324,
+          43.04422
+        ],
+        "type": "Point"
+      },
+      "id": "address.260389852043770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "42 Fraser Ave, Hamilton, Ontario L8H 2S9, Canada",
+        "title": "Paper Trails Process Serving",
+        "address": "42 Fraser Ave, Hamilton, Ontario L8H 2S9, Canada", 
+        "phone": "(905) 520-3491",
+        "website": "papertrailsps.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.813488,
+          43.249853
+        ],
+        "type": "Point"
+      },
+      "id": "address.2778856679673110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4655 Kent Ave, Niagara Falls, Ontario L2H 1J3, Canada",
+        "title": "",
+        "address": "4655 Kent Ave, Niagara Falls, Ontario L2H 1J3, Canada", 
+        "phone": "",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.121347,
+          43.105711
+        ],
+        "type": "Point"
+      },
+      "id": "address.3504520902527470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 University Ave, Toronto, Ontario M5G 1R5, Canada",
+        "title": "Marlow Bailiff and Property Management Servers",
+        "address": "393 University Ave, Toronto, Ontario M5G 1R5, Canada", 
+        "phone": "(905) 346-3506",
+        "website": "marlowbailiff.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387212,
+          43.653998
+        ],
+        "type": "Point"
+      },
+      "id": "address.3750910974834960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "30 Bowes St, Parry Sound, Ontario P2A 2V4, Canada",
+        "title": "Central Ontario Process",
+        "address": "30 Bowes St, Parry Sound, Ontario P2A 2V4, Canada", 
+        "phone": "(705) 746-6063",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.025299,
+          45.34438
+        ],
+        "type": "Point"
+      },
+      "id": "address.4205600123939970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "133 Hahn Ave, Cambridge, Ontario N3C 3B2, Canada",
+        "title": "Serve It Process Servers",
+        "address": "133 Hahn Ave, Cambridge, Ontario N3C 3B2, Canada", 
+        "phone": "(519) 658-5144",
+        "website": "http://serveitprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.324254,
+          43.433581
+        ],
+        "type": "Point"
+      },
+      "id": "address.4488867352154730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "633 Justus Dr, Kingston, Ontario K7M 4H4, Canada",
+        "title": "Sydenham Process Servers",
+        "address": "633 Justus Dr, Kingston, Ontario K7M 4H4, Canada", 
+        "phone": "(613) 542-8266",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -76.572857,
+          44.243541
+        ],
+        "type": "Point"
+      },
+      "id": "address.4491288472734110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "186 Provender Ave, Ottawa, Ontario K1K 4N6, Canada",
+        "title": "PSO Professional Services",
+        "address": "186 Provender Ave, Ottawa, Ontario K1K 4N6, Canada",
+        "phone": "(613) 203-5957",
+        "website": "http://processserverottawa.ca/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.629394,
+          45.448897
+        ],
+        "type": "Point"
+      },
+      "id": "address.5543997827109250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada",
+        "title": "Aries Court Reporting & Process Serving",
+        "address": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada", 
+        "phone": "(705) 531-3082",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -81.327199,
+          48.476813
+        ],
+        "type": "Point"
+      },
+      "id": "address.5727166341942820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5000 Yonge St, Toronto, Ontario M2N 6R9, Canada",
+        "title": "Dial and File Process Servers",
+        "address": "5000 Yonge St, Toronto, Ontario M2N 6R9, Canada", 
+        "phone": "(416) 356-8636",
+        "website": "dialandfile.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.412446,
+          43.766031
+        ],
+        "type": "Point"
+      },
+      "id": "address.5873298111747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "278 Algoma St S, Thunder Bay, Ontario P7B 1X1, Canada",
+        "title": "Zoom Process Server",
+        "address": "278 Algoma St S, Thunder Bay, Ontario P7B 1X1, Canada", 
+        "phone": "(807) 624-7600",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -89.233095,
+          48.42846
+        ],
+        "type": "Point"
+      },
+      "id": "address.5882598397129070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 Exmouth St, Sarnia, Ontario N7T 5N7, Canada",
+        "title": "Canadian Process Serving",
+        "address": "393 Exmouth St, Sarnia, Ontario N7T 5N7, Canada", 
+        "phone": "(519) 344-5544",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.391469,
+          42.985176
+        ],
+        "type": "Point"
+      },
+      "id": "address.5960817612736500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Lowther Ave, Toronto, Ontario M5R 1C5, Canada",
+        "title": "Stamped Services Inc",
+        "address": "15 Lowther Ave, Toronto, Ontario M5R 1C5, Canada", 
+        "phone": "(416) 300-5434",
+        "website": "https://www.stampedservices.ca/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.395949,
+          43.670824
+        ],
+        "type": "Point"
+      },
+      "id": "address.5987691007068520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Erb St W, Waterloo, Ontario N2L 1W8, Canada",
+        "title": "Canadian Process Serving",
+        "address":  "420 Erb St W, Waterloo, Ontario N2L 1W8, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.553166,
+          43.453162
+        ],
+        "type": "Point"
+      },
+      "id": "address.6245106433721480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "160 Woodmount Ave, Toronto, Ontario M4C 3Z1, Canada",
+        "title": "TAS Process Service",
+        "address": "160 Woodmount Ave, Toronto, Ontario M4C 3Z1, Canada", 
+        "phone": "(416) 903-8643",
+        "website": "tasps.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.317672,
+          43.690423
+        ],
+        "type": "Point"
+      },
+      "id": "address.6688351062794830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "172 Wolverine Cres, Thunder Bay, Ontario P7C 5Z2, Canada",
+        "title": "Aberdeen Investigations",
+        "address": "172 Wolverine Cres, Thunder Bay, Ontario P7C 5Z2, Canada", 
+        "phone": "(807) 626-4074",
+        "website": "www.aberdeeninvestigations.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -89.308014,
+          48.383748
+        ],
+        "type": "Point"
+      },
+      "id": "address.6960022218052790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "371 Front St W, Toronto, Ontario M5V 3S8, Canada",
+        "title": "Top Notch Process Serving",
+        "address": "371 Front St W, Toronto, Ontario M5V 3S8, Canada", 
+        "phone": "(905) 975-4082",
+        "website": "topnotchprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.392241,
+          43.643154
+        ],
+        "type": "Point"
+      },
+      "id": "address.7091587693240900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "20 Hughson St S, Hamilton, Ontario L8N 4K2, Canada",
+        "title": "Apollo Process Services",
+        "address": "20 Hughson St S, Hamilton, Ontario L8N 4K2, Canada", 
+        "phone": "(905) 523-5623",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.868343,
+          43.255344
+        ],
+        "type": "Point"
+      },
+      "id": "address.7655157686077830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "69 Elm St, Toronto, Ontario M5G 1H2, Canada",
+        "title": "RMG Legal Services",
+        "address": "69 Elm St, Toronto, Ontario M5G 1H2, Canada", 
+        "phone": "(416) 890-7974",
+        "website": "rmglegal.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.384906,
+          43.657004
+        ],
+        "type": "Point"
+      },
+      "id": "address.7661324328345140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3044 Bloor St W, Toronto, Ontario M8X 1C4, Canada",
+        "title": "Sleuth Process Service",
+        "address": "3044 Bloor St W, Toronto, Ontario M8X 1C4, Canada", 
+        "phone": "(416) 887-6218",
+        "website": "sleuthprocessserving.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.512772,
+          43.647332
+        ],
+        "type": "Point"
+      },
+      "id": "address.7671489376574230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "346 Somerset St W, Ottawa, Ontario K2P 0J9, Canada",
+        "title": "",
+        "address": "346 Somerset St W, Ottawa, Ontario K2P 0J9, Canada",
+        "phone": "(613) 225-1808",
+        "website": "www.infinitilegal.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.695418,
+          45.41549
+        ],
+        "type": "Point"
+      },
+      "id": "address.7709807704653050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "360 George St N, Peterborough, Ontario K9H 2H5, Canada",
+        "title": "Canadian Process Serving",
+        "address": "360 George St N, Peterborough, Ontario K9H 2H5, Canada", 
+        "phone": "(705) 745-2696",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.319579,
+          44.304198
+        ],
+        "type": "Point"
+      },
+      "id": "address.7885417658909000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118, Faraday, Ontario, Canada",
+        "title": "Canadian Process Serving",
+        "address": "505 Highway 118, Faraday, Ontario, Canada", 
+        "phone": "705-645-8793",
+        "website": "http://www.canadianprocessserving.com/bracebridge-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.002421,
+          44.992694
+        ],
+        "type": "Point"
+      },
+      "id": "address.7910582506792120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 Emerson Ave, Toronto, Ontario M6H 3S9, Canada",
+        "title": "Lormit",
+        "address": "80 Emerson Ave, Toronto, Ontario M6H 3S9, Canada", 
+        "phone": "(416) 503-2924",
+        "website": "lormit.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.442115,
+          43.661541
+        ],
+        "type": "Point"
+      },
+      "id": "address.8527825536653730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "216 Anne St, Niagara-On-The-Lake, Ontario, Canada",
+        "title": "Legalities Process Serving",
+        "address": "216 Anne St, Niagara-On-The-Lake, Ontario, Canada", 
+        "phone": "(705) 241-9042",
+        "website": "legalitiesprocessserving.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.084826,
+          43.25021
+        ],
+        "type": "Point"
+      },
+      "id": "address.8712898280561050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "320 Chaleur Ave, Oshawa, Ontario L1J 6N6, Canada",
+        "title": "Process Serving AACES",
+        "address": "320 Chaleur Ave, Oshawa, Ontario L1J 6N6, Canada", 
+        "phone": "(289) 481-1456",
+        "website": "processservingaaces.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.843654,
+          43.862442
+        ],
+        "type": "Point"
+      },
+      "id": "address.8984164981999500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Grey County Road 170, Georgian Bluffs, Ontario, Canada",
+        "title": "Knight Business and Legal Support Services",
+        "address": "Grey County Road 170, Georgian Bluffs, Ontario, Canada", 
+        "phone": "519-270-1572",
+        "website": "http://www.processserverscanada.com/websites/Knight-Process-Servers.html",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -81.056293,
+          44.646685
+        ],
+        "type": "Point"
+      },
+      "id": "address.9060063105468470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1568 Merivale Rd, Ottawa, Ontario K2G 2R2, Canada",
+        "title": "Process Servers Plus",
+        "address": "1568 Merivale Rd, Ottawa, Ontario K2G 2R2, Canada", 
+        "phone": "(613) 292-7325",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.734416,
+          45.351287
+        ],
+        "type": "Point"
+      },
+      "id": "address.9343253697524940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "13 Robertson Dr, Guelph, Ontario N1H 4S7, Canada",
+        "title": "Guelph Process Serving",
+        "address": "13 Robertson Dr, Guelph, Ontario N1H 4S7, Canada",
+        "phone": ":(519) 400-1479",
+        "website": "Guelph Process Serving",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.269201,
+          43.554477
+        ],
+        "type": "Point"
+      },
+      "id": "address.9467308018881540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "101 Worthington St E, North Bay, Ontario P1B 8H8, Canada",
+        "title": "North Bay Bailiff & Process Servers",
+        "address": "101 Worthington St E, North Bay, Ontario P1B 8H8, Canada", 
+        "phone": "(705) 474-3156",
+        "website": "canadapost.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.461637,
+          46.311038
+        ],
+        "type": "Point"
+      },
+      "id": "address.9832531501479760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "111 Oren Blvd, Barrie, Ontario L4N 7J2, Canada",
+        "title": "MacGregor Process Svc",
+        "address": "111 Oren Blvd, Barrie, Ontario L4N 7J2, Canada", 
+        "phone": "(705) 790-6677",
+        "website": "macgregorprocessservices.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.713795,
+          44.406829
+        ],
+        "type": "Point"
+      },
+      "id": "address.9846409642104890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "148 Wellington St W, Chatham-Kent, Ontario N7M 1J3, Canada",
+        "title": "First Class Actions",
+        "address": "148 Wellington St W, Chatham-Kent, Ontario N7M 1J3, Canada", 
+        "phone": "(519) 358-7433",
+        "website": "http://first-class-actions.chatham.tel",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.186156,
+          42.404109
+        ],
+        "type": "Point"
+      },
+      "id": "address.9978345895242290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118 W, Bracebridge, Ontario P1L 1N8, Canada",
+        "title": "Canadian Process Serving",
+        "address": "505 Highway 118 W, Bracebridge, Ontario P1L 1N8, Canada", 
+        "phone": "1 800-465-7378",
+        "website": "http://www.canadianprocessserving.com/bracebridge-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.329706,
+          45.043639
+        ],
+        "type": "Point"
+      },
+      "id": "address.9998789080783110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "L4M 4T7, Ontario, Canada",
+        "title": "Al Blight and Associates",
+        "address": "L4M 4T7, Ontario, Canada", 
+        "phone": "(705) 722-3992",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.66772,
+          44.40764
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.13354481528221020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "M5G 1T6, Ontario, Canada",
+        "title": "Bulletproof Legal",
+        "address": "M5G 1T6, Ontario, Canada",
+        "phone": "(416) 830-0727",
+        "website": "bulletprooflegal.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387783,
+          43.654293
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.17556708585519990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P3A 3C2, Ontario, Canada",
+        "title": "Sudbury Process Serving",
+        "address": "1219 Cardinal Ct, Sudbury, ON P3A 3C2", 
+        "phone": "(705) 566-9500",
+        "website": "processserverscanada.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.962171,
+          46.52393
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.19263704735153610"
+    },
+      
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P3E 3B1, Ontario, Canada",
+        "title": "Process Servers Canada",
+        "address": "4901 pairs street, Sudbury, ON P3E 3B1",
+        "phone": "(705) 566-9500",
+        "website": "processserverscanada.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.989578,
+          46.482052
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.19803929647968690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "K4K 1E5, Ontario, Canada",
+        "title": "Adams Process Serving",
+        "address": "K4K 1E5, Ontario, Canada",
+        "phone": "(613) 794-7396",
+        "website": "aaa-adams.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.27833,
+          45.555849
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.5600310745215720"
+    }
+  ];
+
+// Set a custom icon on each marker based on feature properties.
+myLayer.on('layeradd', function(e) {
+  var marker = e.layer,
+    feature = marker.feature;
+  //marker.setIcon(L.icon(feature.properties.icon));
+    var content = '<h2>' + feature.properties.title + '</h2>' + '<h5>' + '<div class=\"markertag\">' + '<img src=\"icons/goldicon.png\" width=\"40\" height=\"40\">' + '</div>' 
++ feature.properties.address + '</h5>' + '<hr />' +
+        
+'<button class=\"serveadoc dropdown-toggle directory\" type=\"button\" data-toggle="dropdown">Courthouse Directory<img height=\"20\" width=\"20\" src=\"icons/plus-circle-outline.png\"></button>' +
+   
+         '<ul class="dropdown-menu">' +
+           '<li><a href=\"tel:416-314-3962\">Criminal - Ontario Court of Justice: 416-314-3962</a></li>' +
+      '<li><a href=\"tel:416-314-3936\">Crown Attorney: 416-314-3936</a></li>' +
+      '<li><a href=\"tel:416-314-3944\">Ontario Victim Services: 416-314-3944</a></li>' +
+      '<li><a href=\"tel:314-3967\">Accessibility Site Coordinator: 416-314-3967</a></li>' +
+             '</ul>' 
+    +
+        
+'<button class=\"serveadoc dropdown-toggle serversnearby\" type=\"button\" data-toggle="dropdown">Find Servers Nearby <img height=\"20\" width=\"20\" src=\"icons/plus-circle-outline.png\"></button>' +
+    '<ul class="dropdown-menu">' +
+      '<li><a href=\"#\">Bellgor Process Servers</a></li>' +
+      '<li><a href=\"#\">Bonafide Paralegal</a></li>' +
+      '<li><a href=\"#\">Borg Process Serving</a></li>' +
+      '<li><a href=\"#\">Bulletproof Legal</a></li>' +
+      '<li><a href=\"#\">Dial and File Toronto</a></li>' +
+      '<li><a href=\"#\">Do Process Serving</a></li>' +
+    '</ul>' 
+        
+    
+    ;
+  marker.bindPopup(content);
+});
+myLayer.setGeoJSON(geojson);
+mapTooltipsJS.scrollWheelZoom.disable();
+    
+
+    
+    
+ 
+
+</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+       </div>
+</body>
+</html>

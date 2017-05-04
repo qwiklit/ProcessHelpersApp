@@ -1,0 +1,105 @@
+
+      body {background:
+#FEFEFE; margin-left: 0%; margin-right: 0%;}
+
+img {background-size: auto; max-height: 300px; max-width: 300px;}
+
+hr {color: black;}
+        
+@media only screen and (max-width: 600px) {
+  body {
+       margin-left: 0%;
+       margin-right: 0%;
+       }
+
+
+     .columns {border-color: transparent; border-width: 1px;border-style: none;}
+}
+
+.splashbuttons a {margin: auto;}
+h1.inserveheadtitle {text-align: center; font-size: 5.7em; color: gold; letter-spacing: 1.3; padding-top: 110px;font-family: 'Lato', serif;
+}
+h1.inserveheadtitle span {}
+h3 {font-size: 14px; font-family: 'lato', serif; color: black;}
+p.inserveheadsubtitle {text-align: center; color: #efefef; font-family: 'Lato', sans-serif;; font-size: 1.5em; width: 70%; margin: 0 auto;}
+.processsplash {height: 100vh; background: url(images/mapbackblur.png); background-size: cover; background-repeat: no-repeat;}
+.titleblock {margin-top: 35%;}
+
+/*Menu Button*/
+#menu-toggle { color: gold; opacity: 0.9;
+    
+transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; float: left;}
+#menu-toggle img {width: 40px; color: gold; opacity: 0.9; padding-top: 25px;}
+
+/*Account Button*/
+#account-toggle { color: gold; opacity: 0.9;
+    
+transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; float: left;}
+#account-toggle img {width: 42px; color: gold; opacity: 0.9; padding-top: 22.5px;}
+
+#account-toggle:hover {opacity: 1;}
+.hamburgerbutton
+
+li.sidebar-brand a {font-size: 1.9em;}
+
+
+/*Directory*/
+
+#directory .container-fluid {padding-left: 5px; padding-right: 5px;}
+button.serveadoc {
+ background: linear-gradient(gold, yellow); /* Standard syntax */
+  
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: 'Lato', serif;
+  color: black;
+  font-size: 14px;
+  padding: 12px 10px 10px 10px;
+  margin-bottom: 5px;
+  opacity: 0.92;
+  text-decoration: none;
+  border-color: transparent;
+  border-top-style: none;
+  border-bottom-style: none;
+  width: 100%;
+}
+
+#directory {background-image: url('/images/mapback.png')}
+
+button.serveadoc:hover {
+  
+  text-decoration: none;
+}
+
+.pagetitle {text-align: center;}
+.columns {border-color: #dcdcdc; border-width: 1px; border-style: solid; border-bottom-style: none; border-top-style: none;  background:rgba(255,255,255, 0.65); margin-bottom: 10px; height: 335px;}
+ h4.psname { font-family: 'Antic Slab', serif; height: 35px; padding-top: 10px;  text-decoration-color: gold;}
+.pagetitle h1 {font-family: 'Lato', serif;}
+h4.psname {color: black; font-weight: 400; text-align: left; font-size: 19px; font-weight: 400;}
+.citynames h2 {color: #fefefe;font-family: 'Lato', serif;}
+.city {display: block;}
+ 
+.columns p {font-size: 14px; margin-top: 25px; text-align: left; font-family: 'lato', serif;}
+.columns hr {color: gold;}
+
+body.courthousebody .columns {height: 310px;}
+ul.dropdown-menu {background: #fefefe;}
+ul.dropdown-menu a {color: black; font-family: 'lato', serif; text-decoration: none; height: 35px; padding-top: 9px; font-size: 12px;}
+ul.dropdown-menu a:hover {border-left-color: gold; border-left-style: solid; border-left-width: 4px;}
+.courtaddress {height: 65px;}
+
+.spacer {height: 15vh;}
+.half-spacer {height: 15vh;}
+
+button.launchmap {width: 250px; opacity: 1; background: transparent; height: 50px; font-family: 'lato', serif; color: gold; font-size: 1.4em; transition: 0.4s; -webkit-transition: 0.4s; -mozkit-transition: 0.4s; border-right-style: solid; border-color: gold; border-width: 1px; background: transparent; color: gold;}
+
+button.launchmap:hover {height: 60px; width: 260px; border-left-style: solid; border-right-style: solid; border-color: gold; border-width: 1px; background: transparent; color: gold;}
+
+/*Launch Feature*/
+button.launch-feature {width: 250px; opacity: 1; background: transparent; height: 50px; font-family: 'lato', serif; color: #efefef; font-size: 1.4em; transition: 0.4s; -webkit-transition: 0.4s; -mozkit-transition: 0.4s; border-right-style: solid; border-color: #efefef; border-width: 1px; background: transparent; color: #efefef;}
+
+button.launch-feature:hover {height: 50px;  border-left-style: solid; border-right-style: solid; border-color: #efefef; border-width: 1px; background: transparent; color: #fefefe;}
+
+
+.frontpage-options h3 {background: gold; height: 45px; padding-top: 13.5px; width: 100%;}

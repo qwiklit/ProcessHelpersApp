@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UPIKM</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="vladstyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Lato:300" rel="stylesheet">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+     <script src='uploadfile.js'></script>
+      <script src='js/mapboxgl.js'></script>
+    
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+
+
+<style>
+    body {background-image: url('/images/mapbackblur.png');}   
+    
+    .columns p {text-align: left; color: black; font-family: helvetica neue; font-weight: 200; height: 35px; margin-top: 30px;}
+    .columns a {text-align: left; color: black; text-decoration: underline;font-family: helvetica neue; font-weight: 200;}
+    .pagetitle h1 {color: #fefefe; color: gold; margin-bottom: 25px;}
+    .columns h2 {color: #fefefe;}
+    #map, #map2, #map3, #map4, #map5 { position:absolute; top:0; bottom:0; width:100%; }
+    .boxmap {margin-bottom: 15px; margin-top: 15px; margin-left: -15px; margin-right: 15px; height: 410px;}
+    .img-circle {
+    border-radius: 50%;
+}
+    .fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 100px;
+}
+    .fileUpload img {width: 170px; height: 170px; margin-left: -2px; margin-top: 3px;}
+   
+    
+    .btn-primary {background: gold; color: black; height: 190px; width: 190px;}
+    .btn-primary:hover, .btn-primary:focus {color: black; height: 190px; width: 190px;}
+    
+    .dropbtn {
+    background-color: gold;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #efefef}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu:hover .dropbtn {
+    background-color: #fefefe;
+}
+    
+    .selectpicker {height: 60px;}
+</style>
+</head>
+
+    
+<body class="courthousebody">
+
+    <div id="wrapper">
+
+          <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                       <h2 style="font-weight: 200;">Home</h2>
+                    </a>
+                </li>
+                   <li>
+                    <a href="requestservice.html">Make a Request</a>
+                </li>
+                <li>
+                    <a href="profile.html">My Profile</a>
+                </li>
+                <li>
+                    <a href="courthouses.html">Find a Courthouse</a>
+                </li>
+                <li>
+                    <a href="processservers.html">Find a Server</a>
+                </li>
+             
+             
+                </li>
+
+
+                <li>
+                    <a href="file:///Users/philjames/Documents/OmniwireBootstrap/index.html">Newsroom</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Service</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        
+        
+        <div id="directory page-content-wrapper">
+         
+       
+
+        <div class="container-fluid">
+<div class="col-lg-12"  style="text-align: center; height: 65px;">
+          
+                                           <a class="btn" id="menu-toggle"><img   src="hamburgermenu.png"></a>
+                        <a href="profile.html" class="btn" style="float: right;" id="account-toggle"><img  src="icons/user-icon.png"></a>
+          </div>
+               
+
+<div style="margin-bottom: 0px;" class="pagetitle">
+    <h1>Request a Service</h1>
+</div>
+            
+
+<div class="col-sm-12"  style="text-align: center; height: 65px;">
+
+<div style="text-align: center;">
+
+<div class="fileUpload btn btn-primary">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Noun_project_Upload.svg/2000px-Noun_project_Upload.svg.png">
+    <input type="file" class="upload" />
+</div>
+    
+            <div class="container-fluid">
+
+              <div style="height: 170px;">
+                  <h1 style="color: gold; font-weight: 200;">Pick a recipient</h1>
+<select style="margin-top: 18px;" class="selectpicker">
+    <option>Eastern Ontario</option>
+    <option>Golden Horseshoe</option>
+    <option>Greater Toronto Area</option>
+    <option>Northern Ontario</option>
+    <option>Southwestern Ontario</option>
+</select>
+
+
+<select class="selectpicker">
+<option>Canadian Process Servers</option>
+<option>Bellgor Process Servers</option>
+<option>Brampton Process Servers</option>
+<option>Process Helpers</option>
+<option>GTA Paralegal Services</option>
+
+</select>
+    </div>
+                </div>
+<div class="form-group">
+    
+    
+  <label style="color: #efefef" for="comment"><h1 style="color: gold; font-weight: 200;">Please describe the document</h1></label>
+  <textarea style="max-width: 400px ; margin: 0 auto;" class="form-control" rows="5" id="comment"></textarea>
+</div>
+<div><a href="map.html"><button type="button" class="btn btn-default launchmap" style="margin-top: 10px;">Submit</button></div></a> 
+    
+            </div>
+            </div>
+            
+            
+            
+
+</body>
+
+
+</html>

@@ -1,0 +1,1139 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 Koprash Crt, Sault Ste. Marie, Ontario P6B 5S1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.305148,
+          46.517725
+        ],
+        "type": "Point"
+      },
+      "id": "address.1011135035032970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2145 Sherobee Rd, Mississauga, Ontario L5A 2J6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.600754,
+          43.573412
+        ],
+        "type": "Point"
+      },
+      "id": "address.10451644668764060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "701 Rossland Rd E, Whitby, Ontario L1N 9E8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.938512,
+          43.899915
+        ],
+        "type": "Point"
+      },
+      "id": "address.10473605369686410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "266 Charlotte St, Peterborough, Ontario K9H 3Y8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.32465,
+          44.303639
+        ],
+        "type": "Point"
+      },
+      "id": "address.10923748052323840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "43 Sunnylea Cres, Guelph, Ontario N1E 4Y5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.254697,
+          43.560061
+        ],
+        "type": "Point"
+      },
+      "id": "address.11309820026550110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "199 Victoria Rd S, Guelph, Ontario N1E 3J3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.223849,
+          43.551939
+        ],
+        "type": "Point"
+      },
+      "id": "address.1144257007367640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1095 Cline Cres, Ottawa, Ontario K2C 2N9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.75616,
+          45.363082
+        ],
+        "type": "Point"
+      },
+      "id": "address.11445624019485050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Vata Crt, Aurora, Ontario L4G 4B6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.457216,
+          43.987146
+        ],
+        "type": "Point"
+      },
+      "id": "address.11472272323970500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1725 St Laurent Blvd, Ottawa, Ontario K1G 3V4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.625502,
+          45.406125
+        ],
+        "type": "Point"
+      },
+      "id": "address.11685235638721710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3041 Dougall Ave, Windsor, Ontario N9E 1S3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.013938,
+          42.272316
+        ],
+        "type": "Point"
+      },
+      "id": "address.11703261331148800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "142 Catharine St S, Hamilton, Ontario L8N 1R1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.867594,
+          43.251043
+        ],
+        "type": "Point"
+      },
+      "id": "address.12100842856036750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "380 Woolwich St, Guelph, Ontario N1H 8L2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.259823,
+          43.551895
+        ],
+        "type": "Point"
+      },
+      "id": "address.12122226201699460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8005 Financial Dr, Brampton, Ontario L6Y 5J2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.770105,
+          43.631845
+        ],
+        "type": "Point"
+      },
+      "id": "address.12212599671802680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Toronto St, Toronto, Ontario M5C 3G1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.376612,
+          43.65051
+        ],
+        "type": "Point"
+      },
+      "id": "address.12292446625856480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Bracebridge, Ontario P1L 2G2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.30995,
+          45.040115
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394588633011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "470 King St W, Toronto, Ontario M5V 1L8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.395742,
+          43.645324
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394656136199960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1326 Huron St, London, Ontario N5Y 1B4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.2151,
+          43.0205
+        ],
+        "type": "Point"
+      },
+      "id": "address.12511566306004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "210 Glendale Ave, Saint Catharines, Ontario L2T 3Y6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.225607,
+          43.132337
+        ],
+        "type": "Point"
+      },
+      "id": "address.12538328125468710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "365 Evans Ave, Toronto, Ontario M8Z 1K5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.522966,
+          43.615671
+        ],
+        "type": "Point"
+      },
+      "id": "address.12558595560061710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "35 Anvil St, Kitchener, Ontario N2P 1X6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.439989,
+          43.389807
+        ],
+        "type": "Point"
+      },
+      "id": "address.12827099045512250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "128 St Clair St, Chatham-Kent, Ontario N7L 3J2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.192667,
+          42.40896
+        ],
+        "type": "Point"
+      },
+      "id": "address.12875493630601670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "260 King St E, Hamilton, Ontario L8G 4P7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.737596,
+          43.216433
+        ],
+        "type": "Point"
+      },
+      "id": "address.12961985010230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "140 King St E, Etobicoke, Ontario M5C 1G8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.372325,
+          43.650616
+        ],
+        "type": "Point"
+      },
+      "id": "address.13264167903230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Main St E, Milton, Ontario L9T 2M6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.877728,
+          43.51768
+        ],
+        "type": "Point"
+      },
+      "id": "address.13376456170860700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1070 Main St W, Ancaster, Ontario L8S 1N9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.908951,
+          43.258528
+        ],
+        "type": "Point"
+      },
+      "id": "address.13637008087258980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "196 Metcalfe St, Ottawa, Ontario K2P 1P6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.693311,
+          45.418097
+        ],
+        "type": "Point"
+      },
+      "id": "address.13749582006827940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "916 Princess St, Kingston, Ontario K7L 5G3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.512232,
+          44.24146
+        ],
+        "type": "Point"
+      },
+      "id": "address.13832478497798940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "380 Pelissier St, Windsor, Ontario N9A 6W8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.039432,
+          42.316357
+        ],
+        "type": "Point"
+      },
+      "id": "address.13841777188650480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Toronto, Ontario M5A 4L6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.36609,
+          43.652418
+        ],
+        "type": "Point"
+      },
+      "id": "address.13995784675011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "157 Adelaide St W, Toronto, Ontario M5H 3B9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.385063,
+          43.648821
+        ],
+        "type": "Point"
+      },
+      "id": "address.14155360459436670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Colborne St, Toronto, Ontario M5E 1E3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.374789,
+          43.648954
+        ],
+        "type": "Point"
+      },
+      "id": "address.15169542503921290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1300 King St E, Oshawa, Ontario L1H 7Y8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.816652,
+          43.90711
+        ],
+        "type": "Point"
+      },
+      "id": "address.15178768592230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "850 Minto St, Lasalle, Ontario N9J 3M1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.078002,
+          42.242883
+        ],
+        "type": "Point"
+      },
+      "id": "address.15564866975764310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "224 King St W, Hamilton, Ontario L8R 2R5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.875984,
+          43.258606
+        ],
+        "type": "Point"
+      },
+      "id": "address.15635389298199960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Canadian Process Serving | 4 Alliance Blvd, Barrie, Ontario L4M 5K2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.684723,
+          44.407974
+        ],
+        "type": "Point"
+      },
+      "id": "address.16401818194717080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 John St, Toronto, Ontario M5V 2E1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.390268,
+          43.646841
+        ],
+        "type": "Point"
+      },
+      "id": "address.16592746790851980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1560 Brimley Rd, Toronto, Ontario M1P 3G9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.261981,
+          43.770505
+        ],
+        "type": "Point"
+      },
+      "id": "address.16597446448434750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "13 Collier St, Barrie, Ontario L4M 3E6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.68984,
+          44.39039
+        ],
+        "type": "Point"
+      },
+      "id": "address.16803981785250940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1015 Socrates Cres, Windsor, Ontario N9G 2P1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.982393,
+          42.257984
+        ],
+        "type": "Point"
+      },
+      "id": "address.17304215691174400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "11 Grant St, Toronto, Ontario M4M 2H4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.348465,
+          43.659693
+        ],
+        "type": "Point"
+      },
+      "id": "address.17811975584580530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 First Ave, Orangeville, Ontario L9W 4N7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.090365,
+          43.921849
+        ],
+        "type": "Point"
+      },
+      "id": "address.18780914109860610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "525 Highland Rd W, Kitchener, Ontario N2M 5P4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.515797,
+          43.434565
+        ],
+        "type": "Point"
+      },
+      "id": "address.18991516657322410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "86 Emms Dr, Barrie, Ontario L4N 8H4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.712051,
+          44.345354
+        ],
+        "type": "Point"
+      },
+      "id": "address.2582466186149420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "37 McCreery Rd, Ingersoll, Ontario N5C 4G1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.900324,
+          43.04422
+        ],
+        "type": "Point"
+      },
+      "id": "address.260389852043770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "42 Fraser Ave, Hamilton, Ontario L8H 2S9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.813488,
+          43.249853
+        ],
+        "type": "Point"
+      },
+      "id": "address.2778856679673110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4655 Kent Ave, Niagara Falls, Ontario L2H 1J3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.121347,
+          43.105711
+        ],
+        "type": "Point"
+      },
+      "id": "address.3504520902527470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 University Ave, Toronto, Ontario M5G 1R5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387212,
+          43.653998
+        ],
+        "type": "Point"
+      },
+      "id": "address.3750910974834960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "30 Bowes St, Parry Sound, Ontario P2A 2V4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.025299,
+          45.34438
+        ],
+        "type": "Point"
+      },
+      "id": "address.4205600123939970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "133 Hahn Ave, Cambridge, Ontario N3C 3B2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.324254,
+          43.433581
+        ],
+        "type": "Point"
+      },
+      "id": "address.4488867352154730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "633 Justus Dr, Kingston, Ontario K7M 4H4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.572857,
+          44.243541
+        ],
+        "type": "Point"
+      },
+      "id": "address.4491288472734110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "186 Provender Ave, Ottawa, Ontario K1K 4N6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.629394,
+          45.448897
+        ],
+        "type": "Point"
+      },
+      "id": "address.5543997827109250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.327199,
+          48.476813
+        ],
+        "type": "Point"
+      },
+      "id": "address.5727166341942820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5000 Yonge St, Toronto, Ontario M2N 6R9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.412446,
+          43.766031
+        ],
+        "type": "Point"
+      },
+      "id": "address.5873298111747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "278 Algoma St S, Thunder Bay, Ontario P7B 1X1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.233095,
+          48.42846
+        ],
+        "type": "Point"
+      },
+      "id": "address.5882598397129070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 Exmouth St, Sarnia, Ontario N7T 5N7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.391469,
+          42.985176
+        ],
+        "type": "Point"
+      },
+      "id": "address.5960817612736500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Lowther Ave, Toronto, Ontario M5R 1C5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.395949,
+          43.670824
+        ],
+        "type": "Point"
+      },
+      "id": "address.5987691007068520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Erb St W, Waterloo, Ontario N2L 1W8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.553166,
+          43.453162
+        ],
+        "type": "Point"
+      },
+      "id": "address.6245106433721480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "160 Woodmount Ave, Toronto, Ontario M4C 3Z1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.317672,
+          43.690423
+        ],
+        "type": "Point"
+      },
+      "id": "address.6688351062794830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "172 Wolverine Cres, Thunder Bay, Ontario P7C 5Z2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.308014,
+          48.383748
+        ],
+        "type": "Point"
+      },
+      "id": "address.6960022218052790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "371 Front St W, Toronto, Ontario M5V 3S8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.392241,
+          43.643154
+        ],
+        "type": "Point"
+      },
+      "id": "address.7091587693240900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "20 Hughson St S, Hamilton, Ontario L8N 4K2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.868343,
+          43.255344
+        ],
+        "type": "Point"
+      },
+      "id": "address.7655157686077830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "69 Elm St, Toronto, Ontario M5G 1H2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.384906,
+          43.657004
+        ],
+        "type": "Point"
+      },
+      "id": "address.7661324328345140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3044 Bloor St W, Toronto, Ontario M8X 1C4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.512772,
+          43.647332
+        ],
+        "type": "Point"
+      },
+      "id": "address.7671489376574230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "346 Somerset St W, Ottawa, Ontario K2P 0J9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.695418,
+          45.41549
+        ],
+        "type": "Point"
+      },
+      "id": "address.7709807704653050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "360 George St N, Peterborough, Ontario K9H 2H5, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.319579,
+          44.304198
+        ],
+        "type": "Point"
+      },
+      "id": "address.7885417658909000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118, Faraday, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.002421,
+          44.992694
+        ],
+        "type": "Point"
+      },
+      "id": "address.7910582506792120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 Emerson Ave, Toronto, Ontario M6H 3S9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.442115,
+          43.661541
+        ],
+        "type": "Point"
+      },
+      "id": "address.8527825536653730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "216 Anne St, Niagara-On-The-Lake, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.084826,
+          43.25021
+        ],
+        "type": "Point"
+      },
+      "id": "address.8712898280561050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "320 Chaleur Ave, Oshawa, Ontario L1J 6N6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.843654,
+          43.862442
+        ],
+        "type": "Point"
+      },
+      "id": "address.8984164981999500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Grey County Road 170, Georgian Bluffs, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.056293,
+          44.646685
+        ],
+        "type": "Point"
+      },
+      "id": "address.9060063105468470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1568 Merivale Rd, Ottawa, Ontario K2G 2R2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.734416,
+          45.351287
+        ],
+        "type": "Point"
+      },
+      "id": "address.9343253697524940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "13 Robertson Dr, Guelph, Ontario N1H 4S7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.269201,
+          43.554477
+        ],
+        "type": "Point"
+      },
+      "id": "address.9467308018881540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "101 Worthington St E, North Bay, Ontario P1B 8H8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.461637,
+          46.311038
+        ],
+        "type": "Point"
+      },
+      "id": "address.9832531501479760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "111 Oren Blvd, Barrie, Ontario L4N 7J2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.713795,
+          44.406829
+        ],
+        "type": "Point"
+      },
+      "id": "address.9846409642104890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "148 Wellington St W, Chatham-Kent, Ontario N7M 1J3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.186156,
+          42.404109
+        ],
+        "type": "Point"
+      },
+      "id": "address.9978345895242290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118 W, Bracebridge, Ontario P1L 1N8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.329706,
+          45.043639
+        ],
+        "type": "Point"
+      },
+      "id": "address.9998789080783110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "L4M 4T7, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.66772,
+          44.40764
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.13354481528221020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "M5G 1T6, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387783,
+          43.654293
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.17556708585519990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P3A 3C2, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.962171,
+          46.52393
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.19263704735153610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P3E 3B1, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.989578,
+          46.482052
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.19803929647968690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "K4K 1E5, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.27833,
+          45.555849
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.5600310745215720"
+    }
+  ],
+  "type": "FeatureCollection"
+}

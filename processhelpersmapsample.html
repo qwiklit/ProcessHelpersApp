@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title></title>
+  <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="vladstyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Lato:300" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+      .img {width: 200px;}
+      .leaflet-container h2 {text-align: center; font-size: 16px;}      
+      .leaflet-container h5 {font-size: 12px; font-weight: 200; text-align: center;}
+      .markertag {padding-bottom: 14px; padding-top: 9px;}
+    
+  </style>
+    
+    
+</head>
+<body>
+<div id='map-tooltips-js' class='map'> </div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoicGhpbG5pY29sYXNqYW1lcyIsImEiOiJjaXYycGU2a2cwMmZ1MnlwNjZ4YWEzbzRmIn0.hZO-ZaGNzM4jXhbvqtOH3w';
+var mapTooltipsJS = L.mapbox.map('map-tooltips-js', 'mapbox.light')
+  .setView([37.8, -96], 4);
+var myLayer = L.mapbox.featureLayer().addTo(mapTooltipsJS);
+
+var geojson = [
+ 
+   {
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 Koprash Crt, Sault Ste. Marie, Ontario P6B 5S1, Canada",
+        "title": "Due North Process Services",
+        "address": "75 Koprash Crt, Sault Ste. Marie, Ontario P6B 5S1, Canada", 
+        "phone": "",
+        "website": "(705)971-3226",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -84.305148,
+          46.517725
+        ],
+        "type": "Point"
+      },
+      "id": "address.1011135035032970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2145 Sherobee Rd, Mississauga, Ontario L5A 2J6, Canada",
+        "title": "Advance Process Servers Inc.",
+        "address": "2145 Sherobee Rd, Mississauga, Ontario L5A 2J6, Canada", 
+        "phone": "(416) 887-9420",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.600754,
+          43.573412
+        ],
+        "type": "Point"
+      },
+      "id": "address.10451644668764060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "701 Rossland Rd E, Whitby, Ontario L1N 9E8, Canada",
+        "title": "Canadian Process Serving Inc.",
+        "address": "701 Rossland Rd E, Whitby, Ontario L1N 9E8, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "", 
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.938512,
+          43.899915
+        ],
+        "type": "Point"
+      },
+      "id": "address.10473605369686410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "266 Charlotte St, Peterborough, Ontario K9H 3Y8, Canada",
+        "title": "Canadian Process Serving Inc.",
+        "address": "266 Charlotte St, Peterborough, Ontario K9H 3Y8, Canada",
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.32465,
+          44.303639
+        ],
+        "type": "Point"
+      },
+      "id": "address.10923748052323840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "43 Sunnylea Cres, Guelph, Ontario N1E 4Y5, Canada",
+        "title": "Ace Serve Process Server",
+        "address": "43 Sunnylea Cres, Guelph, Ontario N1E 4Y5, Canada", 
+        "phone": "(519) 763-7335",
+        "website": "http://www.aceserve.ca/index.html",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.254697,
+          43.560061
+        ],
+        "type": "Point"
+      },
+      "id": "address.11309820026550110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "199 Victoria Rd S, Guelph, Ontario N1E 3J3, Canada",
+        "title": "Roussy Process Serving",
+        "address": "199 Victoria Rd S, Guelph, Ontario N1E 3J3, Canada", 
+        "phone": "+1 888-661-4414",
+        "website": "https://www.roussyprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.223849,
+          43.551939
+        ],
+        "type": "Point"
+      },
+      "id": "address.1144257007367640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1095 Cline Cres, Ottawa, Ontario K2C 2N9, Canada",
+        "title": "Couvrette Legal Services",
+        "address": "1095 Cline Cres, Ottawa, Ontario K2C 2N9, Canada", 
+        "phone": "(613) 769-3259",
+        "website": "http://www.couvrette.ca/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.75616,
+          45.363082
+        ],
+        "type": "Point"
+      },
+      "id": "address.11445624019485050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4 Vata Crt, Aurora, Ontario L4G 4B6, Canada",
+        "title": "York Regional Document Services",
+        "address": "4 Vata Crt, Aurora, Ontario L4G 4B6, Canada", 
+        "phone": "(905) 841-7510",
+        "website": "www.processserverscanada.com/websites/yorkdocumentservice.html",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.457216,
+          43.987146
+        ],
+        "type": "Point"
+      },
+      "id": "address.11472272323970500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1725 St Laurent Blvd, Ottawa, Ontario K1G 3V4, Canada",
+        "title": "Lormit Personal Services",
+        "address": "1725 St Laurent Blvd, Ottawa, Ontario K1G 3V4, Canada", 
+        "phone": "(613) 244-9097",
+        "website": "lormit.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.625502,
+          45.406125
+        ],
+        "type": "Point"
+      },
+      "id": "address.11685235638721710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3041 Dougall Ave, Windsor, Ontario N9E 1S3, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address": "3041 Dougall Ave, Windsor, Ontario N9E 1S3, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -83.013938,
+          42.272316
+        ],
+        "type": "Point"
+      },
+      "id": "address.11703261331148800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "142 Catharine St S, Hamilton, Ontario L8N 1R1, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address":  "142 Catharine St S, Hamilton, Ontario L8N 1R1, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.867594,
+          43.251043
+        ],
+        "type": "Point"
+      },
+      "id": "address.12100842856036750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "380 Woolwich St, Guelph, Ontario N1H 8L2, Canada",
+        "title": "Pro Serve Consultants",
+        "address": "380 Woolwich St, Guelph, Ontario N1H 8L2, Canada", 
+        "phone": "(519) 827-1919",
+        "website": "http://www.proserveconsultants.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.259823,
+          43.551895
+        ],
+        "type": "Point"
+      },
+      "id": "address.12122226201699460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "8005 Financial Dr, Brampton, Ontario L6Y 5J2, Canada",
+        "title": "RGM Process Servers",
+        "address": "8005 Financial Dr, Brampton, Ontario L6Y 5J2, Canada", 
+        "phone": "(905) 455-5131",
+        "website": "rgmprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.770105,
+          43.631845
+        ],
+        "type": "Point"
+      },
+      "id": "address.12212599671802680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "36 Toronto St, Toronto, Ontario M5C 3G1, Canada",
+        "title": "Dropdocs",
+        "address": "36 Toronto St, Toronto, Ontario M5C 3G1, Canada", 
+        "phone": "(647) 247-5205",
+        "website": "dropdocs.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.376612,
+          43.65051
+        ],
+        "type": "Point"
+      },
+      "id": "address.12292446625856480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Bracebridge, Ontario P1L 2G2, Canada",
+        "title": "Comission Service Inc.",
+        "address": "25 Ontario St, Bracebridge, Ontario P1L 2G2, Canada", 
+        "phone": "(705) 645-4662",
+        "website": "http://comserve.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.30995,
+          45.040115
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394588633011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "470 King St W, Toronto, Ontario M5V 1L8, Canada",
+        "title": "Law Process Service",
+        "address": "470 King St W, Toronto, Ontario M5V 1L8, Canada", 
+        "phone": "(905) 436-2007",
+        "website": "lawprocessservice.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.395742,
+          43.645324
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394656136199960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1326 Huron St, London, Ontario N5Y 1B4, Canada",
+        "title": "London Process Serving",
+        "address": "1326 Huron St, London, Ontario N5Y 1B4, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "http://www.canadianprocessserving.com/london-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -81.2151,
+          43.0205
+        ],
+        "type": "Point"
+      },
+      "id": "address.12511566306004160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "210 Glendale Ave, Saint Catharines, Ontario L2T 3Y6, Canada",
+        "title": "Peninsula Bailiff and Process Servers",
+        "address": "210 Glendale Ave, Saint Catharines, Ontario L2T 3Y6, Canada", 
+        "phone": "(905) 646-3538",
+        "website": "http://www.pbps.net",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      
+      "geometry": {
+        "coordinates": [
+          -79.225607,
+          43.132337
+        ],
+        "type": "Point"
+      },
+      "id": "address.12538328125468710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "365 Evans Ave, Toronto, Ontario M8Z 1K5, Canada",
+        "title": "Borg Process Serving",
+        "address": "365 Evans Ave, Toronto, Ontario M8Z 1K5, Canada", 
+        "phone": "(416) 746-4437",
+        "website": "borgprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.522966,
+          43.615671
+        ],
+        "type": "Point"
+      },
+      "id": "address.12558595560061710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "35 Anvil St, Kitchener, Ontario N2P 1X6, Canada",
+        "title": "Tri-City Process Servers",
+        "address":  "35 Anvil St, Kitchener, Ontario N2P 1X6, Canada", 
+        "phone": "519-496-8277",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.439989,
+          43.389807
+        ],
+        "type": "Point"
+      },
+      "id": "address.12827099045512250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "128 St Clair St, Chatham-Kent, Ontario N7L 3J2, Canada",
+        "title": "Paralegal Solutions Professional Corporation",
+        "address": "128 St Clair St, Chatham-Kent, Ontario N7L 3J2, Canada", 
+        "phone": "(519) 350-2833",
+        "website": "paralegalsolutions.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.192667,
+          42.40896
+        ],
+        "type": "Point"
+      },
+      "id": "address.12875493630601670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "260 King St E, Hamilton, Ontario L8G 4P7, Canada",
+        "title": "J&S Process Service",
+        "address": "260 King St E, Hamilton, Ontario L8G 4P7, Canada", 
+        "phone": "(905) 570-2181",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.737596,
+          43.216433
+        ],
+        "type": "Point"
+      },
+      "id": "address.12961985010230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "140 King St E, Etobicoke, Ontario M5C 1G8, Canada",
+        "title": "Chase Process Servers",
+        "address": "140 King St E, Etobicoke, Ontario M5C 1G8, Canada", 
+        "phone": "(905) 317-3411",
+        "website": "chaseprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.372325,
+          43.650616
+        ],
+        "type": "Point"
+      },
+      "id": "address.13264167903230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Main St E, Milton, Ontario L9T 2M6, Canada",
+        "title": "CitiServ Inc",
+        "address": "420 Main St E, Milton, Ontario L9T 2M6, Canada", 
+        "phone": "(416) 450-5791",
+        "website": "http://citi-serv.com/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.877728,
+          43.51768
+        ],
+        "type": "Point"
+      },
+      "id": "address.13376456170860700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1070 Main St W, Ancaster, Ontario L8S 1N9, Canada",
+        "title": "Ham-Tor Serve",
+        "address": "1070 Main St W, Ancaster, Ontario L8S 1N9, Canada", 
+        "phone": "(905) 529-5888",
+        "website": "ham-tor-serve.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.908951,
+          43.258528
+        ],
+        "type": "Point"
+      },
+      "id": "address.13637008087258980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "196 Metcalfe St, Ottawa, Ontario K2P 1P6, Canada",
+        "title": "MCA Process Service",
+        "address": "196 Metcalfe St, Ottawa, Ontario K2P 1P6, Canada", 
+        "phone": "(613) 791-4954",
+        "website": "www.mcaprocessservice.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.693311,
+          45.418097
+        ],
+        "type": "Point"
+      },
+      "id": "address.13749582006827940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "916 Princess St, Kingston, Ontario K7L 5G3, Canada",
+        "title": "Frontenac Legal Services",
+        "address": "916 Princess St, Kingston, Ontario K7L 5G3, Canada", 
+        "phone": "(613) 877-2049",
+        "website": "frontenaclegal.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -76.512232,
+          44.24146
+        ],
+        "type": "Point"
+      },
+      "id": "address.13832478497798940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "380 Pelissier St, Windsor, Ontario N9A 6W8, Canada",
+        "title": "City County Process Service",
+        "address": "380 Pelissier St, Windsor, Ontario N9A 6W8, Canada", 
+        "phone": "(519) 250-8862",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -83.039432,
+          42.316357
+        ],
+        "type": "Point"
+      },
+      "id": "address.13841777188650480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Toronto, Ontario M5A 4L6, Canada",
+        "title": "Comission Service Inc.",
+        "address": "25 Ontario St, Toronto, Ontario M5A 4L6, Canada", 
+        "phone": "(705) 645-4662",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.36609,
+          43.652418
+        ],
+        "type": "Point"
+      },
+      "id": "address.13995784675011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "157 Adelaide St W, Toronto, Ontario M5H 3B9, Canada",
+        "title": "Canadian Process Serving",
+        "address": "157 Adelaide St W, Toronto, Ontario M5H 3B9, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/toronto-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.385063,
+          43.648821
+        ],
+        "type": "Point"
+      },
+      "id": "address.14155360459436670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "47 Colborne St, Toronto, Ontario M5E 1E3, Canada",
+        "title": "Independent Process Servers",
+        "address": "47 Colborne St, Toronto, Ontario M5E 1E3, Canada", 
+        "phone": "(416) 860-1200",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.374789,
+          43.648954
+        ],
+        "type": "Point"
+      },
+      "id": "address.15169542503921290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1300 King St E, Oshawa, Ontario L1H 7Y8, Canada",
+        "title": "Oshawa Process Servers",
+        "address": "1300 King St E, Oshawa, Ontario L1H 7Y8, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/oshawa-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.816652,
+          43.90711
+        ],
+        "type": "Point"
+      },
+      "id": "address.15178768592230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "850 Minto St, Lasalle, Ontario N9J 3M1, Canada",
+        "title": "Dependable Process Serving",
+        "address": "850 Minto St, Lasalle, Ontario N9J 3M1, Canada", 
+        "phone": "(519) 978-9877",
+        "website": "dependableprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -83.078002,
+          42.242883
+        ],
+        "type": "Point"
+      },
+      "id": "address.15564866975764310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "224 King St W, Hamilton, Ontario L8R 2R5, Canada",
+        "title": "Swift Process Service",
+        "address": "224 King St W, Hamilton, Ontario L8R 2R5, Canada", 
+        "phone": "(905) 528-7412",
+        "website": "http://www.swiftps.com/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.875984,
+          43.258606
+        ],
+        "type": "Point"
+      },
+      "id": "address.15635389298199960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Canadian Process Serving | 4 Alliance Blvd, Barrie, Ontario L4M 5K2, Canada",
+        "title": "Canadian Process Serving",
+        "address": "4 Alliance Blvd, Barrie, Ontario L4M 5K2, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/barrie-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.684723,
+          44.407974
+        ],
+        "type": "Point"
+      },
+      "id": "address.16401818194717080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 John St, Toronto, Ontario M5V 2E1, Canada",
+        "title": "Stamped Process Services",
+        "address": "80 John St, Toronto, Ontario M5V 2E1, Canada", 
+        "phone": "(416) 300-5434",
+        "website": "stampedservices.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.390268,
+          43.646841
+        ],
+        "type": "Point"
+      },
+      "id": "address.16592746790851980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1560 Brimley Rd, Toronto, Ontario M1P 3G9, Canada",
+        "title": "",
+        "address": "1560 Brimley Rd, Toronto, Ontario M1P 3G9, Canada", 
+        "phone": "",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.261981,
+          43.770505
+        ],
+        "type": "Point"
+      },
+      "id": "address.16597446448434750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "13 Collier St, Barrie, Ontario L4M 3E6, Canada",
+        "title": "Dominion Process Service",
+        "address": "13 Collier St, Barrie, Ontario L4M 3E6, Canada", 
+        "phone": "+1 888-301-7378",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.68984,
+          44.39039
+        ],
+        "type": "Point"
+      },
+      "id": "address.16803981785250940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1015 Socrates Cres, Windsor, Ontario N9G 2P1, Canada",
+        "title": "Essex Process Service",
+        "address": "1015 Socrates Cres, Windsor, Ontario N9G 2P1, Canada", 
+        "phone": "(519) 250-9669",
+        "website": "essexprocess.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.982393,
+          42.257984
+        ],
+        "type": "Point"
+      },
+      "id": "address.17304215691174400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "11 Grant St, Toronto, Ontario M4M 2H4, Canada",
+        "title": "Bonafide Paralegal",
+        "address": "11 Grant St, Toronto, Ontario M4M 2H4, Canada", 
+        "phone": "(416) 462-3633",
+        "website": "bonafideparalegal.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.348465,
+          43.659693
+        ],
+        "type": "Point"
+      },
+      "id": "address.17811975584580530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 First Ave, Orangeville, Ontario L9W 4N7, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address": "75 First Ave, Orangeville, Ontario L9W 4N7, Canada", 
+        "phone": "+1 800-465-7378",
+        "website": "http://www.canadianprocessserving.com/orangeville-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.090365,
+          43.921849
+        ],
+        "type": "Point"
+      },
+      "id": "address.18780914109860610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "525 Highland Rd W, Kitchener, Ontario N2M 5P4, Canada",
+        "title": "Canadian Process Serving Inc",
+        "address": "525 Highland Rd W, Kitchener, Ontario N2M 5P4, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "http://www.canadianprocessserving.com/kitchener-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.515797,
+          43.434565
+        ],
+        "type": "Point"
+      },
+      "id": "address.18991516657322410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "86 Emms Dr, Barrie, Ontario L4N 8H4, Canada",
+        "title": "Quick Serve Document Service",
+        "address": "86 Emms Dr, Barrie, Ontario L4N 8H4, Canada", 
+        "phone": "(705) 734-8454",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.712051,
+          44.345354
+        ],
+        "type": "Point"
+      },
+      "id": "address.2582466186149420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "37 McCreery Rd, Ingersoll, Ontario N5C 4G1, Canada",
+        "title": "Oxford Process Servers",
+        "address": "37 McCreery Rd, Ingersoll, Ontario N5C 4G1, Canada", 
+        "phone": "(519) 425-0423",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.900324,
+          43.04422
+        ],
+        "type": "Point"
+      },
+      "id": "address.260389852043770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "42 Fraser Ave, Hamilton, Ontario L8H 2S9, Canada",
+        "title": "Paper Trails Process Serving",
+        "address": "42 Fraser Ave, Hamilton, Ontario L8H 2S9, Canada", 
+        "phone": "(905) 520-3491",
+        "website": "papertrailsps.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.813488,
+          43.249853
+        ],
+        "type": "Point"
+      },
+      "id": "address.2778856679673110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "4655 Kent Ave, Niagara Falls, Ontario L2H 1J3, Canada",
+        "title": "",
+        "address": "4655 Kent Ave, Niagara Falls, Ontario L2H 1J3, Canada", 
+        "phone": "",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.121347,
+          43.105711
+        ],
+        "type": "Point"
+      },
+      "id": "address.3504520902527470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 University Ave, Toronto, Ontario M5G 1R5, Canada",
+        "title": "Marlow Bailiff and Property Management Servers",
+        "address": "393 University Ave, Toronto, Ontario M5G 1R5, Canada", 
+        "phone": "(905) 346-3506",
+        "website": "marlowbailiff.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387212,
+          43.653998
+        ],
+        "type": "Point"
+      },
+      "id": "address.3750910974834960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "30 Bowes St, Parry Sound, Ontario P2A 2V4, Canada",
+        "title": "Central Ontario Process",
+        "address": "30 Bowes St, Parry Sound, Ontario P2A 2V4, Canada", 
+        "phone": "(705) 746-6063",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.025299,
+          45.34438
+        ],
+        "type": "Point"
+      },
+      "id": "address.4205600123939970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "133 Hahn Ave, Cambridge, Ontario N3C 3B2, Canada",
+        "title": "Serve It Process Servers",
+        "address": "133 Hahn Ave, Cambridge, Ontario N3C 3B2, Canada", 
+        "phone": "(519) 658-5144",
+        "website": "http://serveitprocessservers.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.324254,
+          43.433581
+        ],
+        "type": "Point"
+      },
+      "id": "address.4488867352154730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "633 Justus Dr, Kingston, Ontario K7M 4H4, Canada",
+        "title": "Sydenham Process Servers",
+        "address": "633 Justus Dr, Kingston, Ontario K7M 4H4, Canada", 
+        "phone": "(613) 542-8266",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -76.572857,
+          44.243541
+        ],
+        "type": "Point"
+      },
+      "id": "address.4491288472734110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "186 Provender Ave, Ottawa, Ontario K1K 4N6, Canada",
+        "title": "PSO Professional Services",
+        "address": "186 Provender Ave, Ottawa, Ontario K1K 4N6, Canada",
+        "phone": "(613) 203-5957",
+        "website": "http://processserverottawa.ca/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.629394,
+          45.448897
+        ],
+        "type": "Point"
+      },
+      "id": "address.5543997827109250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada",
+        "title": "Aries Court Reporting & Process Serving",
+        "address": "38 Pine St N, Timmins, Ontario P4N 5L5, Canada", 
+        "phone": "(705) 531-3082",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -81.327199,
+          48.476813
+        ],
+        "type": "Point"
+      },
+      "id": "address.5727166341942820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5000 Yonge St, Toronto, Ontario M2N 6R9, Canada",
+        "title": "Dial and File Process Servers",
+        "address": "5000 Yonge St, Toronto, Ontario M2N 6R9, Canada", 
+        "phone": "(416) 356-8636",
+        "website": "dialandfile.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.412446,
+          43.766031
+        ],
+        "type": "Point"
+      },
+      "id": "address.5873298111747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "278 Algoma St S, Thunder Bay, Ontario P7B 1X1, Canada",
+        "title": "Zoom Process Server",
+        "address": "278 Algoma St S, Thunder Bay, Ontario P7B 1X1, Canada", 
+        "phone": "(807) 624-7600",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -89.233095,
+          48.42846
+        ],
+        "type": "Point"
+      },
+      "id": "address.5882598397129070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "393 Exmouth St, Sarnia, Ontario N7T 5N7, Canada",
+        "title": "Canadian Process Serving",
+        "address": "393 Exmouth St, Sarnia, Ontario N7T 5N7, Canada", 
+        "phone": "(519) 344-5544",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.391469,
+          42.985176
+        ],
+        "type": "Point"
+      },
+      "id": "address.5960817612736500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "15 Lowther Ave, Toronto, Ontario M5R 1C5, Canada",
+        "title": "Stamped Services Inc",
+        "address": "15 Lowther Ave, Toronto, Ontario M5R 1C5, Canada", 
+        "phone": "(416) 300-5434",
+        "website": "https://www.stampedservices.ca/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.395949,
+          43.670824
+        ],
+        "type": "Point"
+      },
+      "id": "address.5987691007068520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Erb St W, Waterloo, Ontario N2L 1W8, Canada",
+        "title": "Canadian Process Serving",
+        "address":  "420 Erb St W, Waterloo, Ontario N2L 1W8, Canada", 
+        "phone": "1-800-465-7378",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.553166,
+          43.453162
+        ],
+        "type": "Point"
+      },
+      "id": "address.6245106433721480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "160 Woodmount Ave, Toronto, Ontario M4C 3Z1, Canada",
+        "title": "TAS Process Service",
+        "address": "160 Woodmount Ave, Toronto, Ontario M4C 3Z1, Canada", 
+        "phone": "(416) 903-8643",
+        "website": "tasps.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.317672,
+          43.690423
+        ],
+        "type": "Point"
+      },
+      "id": "address.6688351062794830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "172 Wolverine Cres, Thunder Bay, Ontario P7C 5Z2, Canada",
+        "title": "Aberdeen Investigations",
+        "address": "172 Wolverine Cres, Thunder Bay, Ontario P7C 5Z2, Canada", 
+        "phone": "(807) 626-4074",
+        "website": "www.aberdeeninvestigations.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -89.308014,
+          48.383748
+        ],
+        "type": "Point"
+      },
+      "id": "address.6960022218052790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "371 Front St W, Toronto, Ontario M5V 3S8, Canada",
+        "title": "Top Notch Process Serving",
+        "address": "371 Front St W, Toronto, Ontario M5V 3S8, Canada", 
+        "phone": "(905) 975-4082",
+        "website": "topnotchprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.392241,
+          43.643154
+        ],
+        "type": "Point"
+      },
+      "id": "address.7091587693240900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "20 Hughson St S, Hamilton, Ontario L8N 4K2, Canada",
+        "title": "Apollo Process Services",
+        "address": "20 Hughson St S, Hamilton, Ontario L8N 4K2, Canada", 
+        "phone": "(905) 523-5623",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.868343,
+          43.255344
+        ],
+        "type": "Point"
+      },
+      "id": "address.7655157686077830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "69 Elm St, Toronto, Ontario M5G 1H2, Canada",
+        "title": "RMG Legal Services",
+        "address": "69 Elm St, Toronto, Ontario M5G 1H2, Canada", 
+        "phone": "(416) 890-7974",
+        "website": "rmglegal.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.384906,
+          43.657004
+        ],
+        "type": "Point"
+      },
+      "id": "address.7661324328345140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "3044 Bloor St W, Toronto, Ontario M8X 1C4, Canada",
+        "title": "Sleuth Process Service",
+        "address": "3044 Bloor St W, Toronto, Ontario M8X 1C4, Canada", 
+        "phone": "(416) 887-6218",
+        "website": "sleuthprocessserving.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.512772,
+          43.647332
+        ],
+        "type": "Point"
+      },
+      "id": "address.7671489376574230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "346 Somerset St W, Ottawa, Ontario K2P 0J9, Canada",
+        "title": "",
+        "address": "346 Somerset St W, Ottawa, Ontario K2P 0J9, Canada",
+        "phone": "(613) 225-1808",
+        "website": "www.infinitilegal.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.695418,
+          45.41549
+        ],
+        "type": "Point"
+      },
+      "id": "address.7709807704653050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "360 George St N, Peterborough, Ontario K9H 2H5, Canada",
+        "title": "Canadian Process Serving",
+        "address": "360 George St N, Peterborough, Ontario K9H 2H5, Canada", 
+        "phone": "(705) 745-2696",
+        "website": "canadianprocessserving.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.319579,
+          44.304198
+        ],
+        "type": "Point"
+      },
+      "id": "address.7885417658909000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118, Faraday, Ontario, Canada",
+        "title": "Canadian Process Serving",
+        "address": "505 Highway 118, Faraday, Ontario, Canada", 
+        "phone": "705-645-8793",
+        "website": "http://www.canadianprocessserving.com/bracebridge-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.002421,
+          44.992694
+        ],
+        "type": "Point"
+      },
+      "id": "address.7910582506792120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "80 Emerson Ave, Toronto, Ontario M6H 3S9, Canada",
+        "title": "Lormit",
+        "address": "80 Emerson Ave, Toronto, Ontario M6H 3S9, Canada", 
+        "phone": "(416) 503-2924",
+        "website": "lormit.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.442115,
+          43.661541
+        ],
+        "type": "Point"
+      },
+      "id": "address.8527825536653730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "216 Anne St, Niagara-On-The-Lake, Ontario, Canada",
+        "title": "Legalities Process Serving",
+        "address": "216 Anne St, Niagara-On-The-Lake, Ontario, Canada", 
+        "phone": "(705) 241-9042",
+        "website": "legalitiesprocessserving.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.084826,
+          43.25021
+        ],
+        "type": "Point"
+      },
+      "id": "address.8712898280561050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "320 Chaleur Ave, Oshawa, Ontario L1J 6N6, Canada",
+        "title": "Process Serving AACES",
+        "address": "320 Chaleur Ave, Oshawa, Ontario L1J 6N6, Canada", 
+        "phone": "(289) 481-1456",
+        "website": "processservingaaces.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -78.843654,
+          43.862442
+        ],
+        "type": "Point"
+      },
+      "id": "address.8984164981999500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Grey County Road 170, Georgian Bluffs, Ontario, Canada",
+        "title": "Knight Business and Legal Support Services",
+        "address": "Grey County Road 170, Georgian Bluffs, Ontario, Canada", 
+        "phone": "519-270-1572",
+        "website": "http://www.processserverscanada.com/websites/Knight-Process-Servers.html",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -81.056293,
+          44.646685
+        ],
+        "type": "Point"
+      },
+      "id": "address.9060063105468470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1568 Merivale Rd, Ottawa, Ontario K2G 2R2, Canada",
+        "title": "Process Servers Plus",
+        "address": "1568 Merivale Rd, Ottawa, Ontario K2G 2R2, Canada", 
+        "phone": "(613) 292-7325",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -75.734416,
+          45.351287
+        ],
+        "type": "Point"
+      },
+      "id": "address.9343253697524940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "13 Robertson Dr, Guelph, Ontario N1H 4S7, Canada",
+        "title": "Guelph Process Serving",
+        "address": "13 Robertson Dr, Guelph, Ontario N1H 4S7, Canada",
+        "phone": ":(519) 400-1479",
+        "website": "Guelph Process Serving",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.269201,
+          43.554477
+        ],
+        "type": "Point"
+      },
+      "id": "address.9467308018881540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "101 Worthington St E, North Bay, Ontario P1B 8H8, Canada",
+        "title": "North Bay Bailiff & Process Servers",
+        "address": "101 Worthington St E, North Bay, Ontario P1B 8H8, Canada", 
+        "phone": "(705) 474-3156",
+        "website": "canadapost.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.461637,
+          46.311038
+        ],
+        "type": "Point"
+      },
+      "id": "address.9832531501479760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "111 Oren Blvd, Barrie, Ontario L4N 7J2, Canada",
+        "title": "MacGregor Process Svc",
+        "address": "111 Oren Blvd, Barrie, Ontario L4N 7J2, Canada", 
+        "phone": "(705) 790-6677",
+        "website": "macgregorprocessservices.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.713795,
+          44.406829
+        ],
+        "type": "Point"
+      },
+      "id": "address.9846409642104890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "148 Wellington St W, Chatham-Kent, Ontario N7M 1J3, Canada",
+        "title": "First Class Actions",
+        "address": "148 Wellington St W, Chatham-Kent, Ontario N7M 1J3, Canada", 
+        "phone": "(519) 358-7433",
+        "website": "http://first-class-actions.chatham.tel",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -82.186156,
+          42.404109
+        ],
+        "type": "Point"
+      },
+      "id": "address.9978345895242290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118 W, Bracebridge, Ontario P1L 1N8, Canada",
+        "title": "Canadian Process Serving",
+        "address": "505 Highway 118 W, Bracebridge, Ontario P1L 1N8, Canada", 
+        "phone": "1 800-465-7378",
+        "website": "http://www.canadianprocessserving.com/bracebridge-process-servers/",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.329706,
+          45.043639
+        ],
+        "type": "Point"
+      },
+      "id": "address.9998789080783110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "L4M 4T7, Ontario, Canada",
+        "title": "Al Blight and Associates",
+        "address": "L4M 4T7, Ontario, Canada", 
+        "phone": "(705) 722-3992",
+        "website": "",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.66772,
+          44.40764
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.13354481528221020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "M5G 1T6, Ontario, Canada",
+        "title": "Bulletproof Legal",
+        "address": "M5G 1T6, Ontario, Canada",
+        "phone": "(416) 830-0727",
+        "website": "bulletprooflegal.ca",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -79.387783,
+          43.654293
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.17556708585519990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P3A 3C2, Ontario, Canada",
+        "title": "Sudbury Process Serving",
+        "address": "1219 Cardinal Ct, Sudbury, ON P3A 3C2", 
+        "phone": "(705) 566-9500",
+        "website": "processserverscanada.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.962171,
+          46.52393
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.19263704735153610"
+    },
+      
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "P3E 3B1, Ontario, Canada",
+        "title": "Process Servers Canada",
+        "address": "4901 pairs street, Sudbury, ON P3E 3B1",
+        "phone": "(705) 566-9500",
+        "website": "processserverscanada.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"  
+      },
+      "geometry": {
+        "coordinates": [
+          -80.989578,
+          46.482052
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.19803929647968690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "K4K 1E5, Ontario, Canada",
+        "title": "Adams Process Serving",
+        "address": "K4K 1E5, Ontario, Canada",
+        "phone": "(613) 794-7396",
+        "website": "aaa-adams.com",
+        "marker-color": "#8b0000",
+        "marker-symbol": "suitcase",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.27833,
+          45.555849
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.5600310745215720"
+    }
+  ],
+  "type": "FeatureCollection"
+}
+  ];
+
+// Set a custom icon on each marker based on feature properties.
+myLayer.on('layeradd', function(e) {
+  var marker = e.layer,
+    feature = marker.feature;
+       
+  //marker.setIcon(L.icon(feature.properties.icon));
+    var content = '<h2>' + feature.properties.title + '</h2>' + '<h5>' + '<div class=\"markertag\">' + '<img src=\"icons/goldicon.png\" width=\"40\" height=\"40\">' + '</div>' 
++ feature.properties.address + '</h5>' + '<hr />' +
+        
+'<button class=\"serveadoc dropdown-toggle directory\" type=\"button\" data-toggle="dropdown">Request a Service<img height=\"20\" width=\"20\" src=\"icons/plus-circle-outline.png\"></button>' +
+  
+'<button class=\"serveadoc dropdown-toggle serversnearby\" type=\"button\" data-toggle="dropdown">Contact <img height=\"20\" width=\"20\" src=\"icons/plus-circle-outline.png\"></button>' 
+        
+    
+    ;
+  marker.bindPopup(content);
+});
+myLayer.setGeoJSON(geojson);
+mapTooltipsJS.scrollWheelZoom.disable();
+
+    
+    
+
+
+</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

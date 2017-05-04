@@ -1,0 +1,285 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "2145 Sherobee Rd, Mississauga, Ontario L5A 2J6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.600754,
+          43.573412
+        ],
+        "type": "Point"
+      },
+      "id": "address.10451644668764060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "701 Rossland Rd E, Whitby, Ontario L1N 9E8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.938512,
+          43.899915
+        ],
+        "type": "Point"
+      },
+      "id": "address.10473605369686410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "199 Victoria Rd S, Guelph, Ontario N1E 3J3, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.223849,
+          43.551939
+        ],
+        "type": "Point"
+      },
+      "id": "address.1144257007367640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "142 Catharine St S, Hamilton, Ontario L8N 1R1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.867594,
+          43.251043
+        ],
+        "type": "Point"
+      },
+      "id": "address.12100842856036750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "25 Ontario St, Bracebridge, Ontario P1L 2G2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.30995,
+          45.040115
+        ],
+        "type": "Point"
+      },
+      "id": "address.12394588633011970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "35 Anvil St, Kitchener, Ontario N2P 1X6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.439989,
+          43.389807
+        ],
+        "type": "Point"
+      },
+      "id": "address.12827099045512250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1070 Main St W, Hamilton, Ontario L8S 1N9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.908951,
+          43.258528
+        ],
+        "type": "Point"
+      },
+      "id": "address.13637008087258980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "157 Adelaide St W, Toronto, Ontario M5H 3B9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.385063,
+          43.648821
+        ],
+        "type": "Point"
+      },
+      "id": "address.14155360459436670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1300 King St E, Oshawa, Ontario L1H 7Y8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.816652,
+          43.90711
+        ],
+        "type": "Point"
+      },
+      "id": "address.15178768592230150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Canadian Process Serving | 4 Alliance Blvd, Barrie, Ontario L4M 5K2, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.684723,
+          44.407974
+        ],
+        "type": "Point"
+      },
+      "id": "address.16401818194717080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "1560 Brimley Rd, Toronto, Ontario M1P 3G9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.261981,
+          43.770505
+        ],
+        "type": "Point"
+      },
+      "id": "address.16597446448434750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "75 First Ave, Orangeville, Ontario L9W 4N7, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.090365,
+          43.921849
+        ],
+        "type": "Point"
+      },
+      "id": "address.18780914109860610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "525 Highland Rd W, Kitchener, Ontario N2M 5P4, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.515797,
+          43.434565
+        ],
+        "type": "Point"
+      },
+      "id": "address.18991516657322410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "5000 Yonge St, Toronto, Ontario M2N 6R9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.412446,
+          43.766031
+        ],
+        "type": "Point"
+      },
+      "id": "address.5873298111747830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "420 Erb St W, Waterloo, Ontario N2L 1W8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.553166,
+          43.453162
+        ],
+        "type": "Point"
+      },
+      "id": "address.6245106433721480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Stamped Process Servers | 560 Front St W, Toronto, Ontario M5V 1C1, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.400166,
+          43.641248
+        ],
+        "type": "Point"
+      },
+      "id": "address.7091587693240900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "346 Somerset St W, Ottawa, Ontario K2P 0J9, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.695418,
+          45.41549
+        ],
+        "type": "Point"
+      },
+      "id": "address.7709807704653050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "320 Chaleur Ave, Oshawa, Ontario L1J 6N6, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.843697,
+          43.862481
+        ],
+        "type": "Point"
+      },
+      "id": "address.8984164981999500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Grey County Road 170, Georgian Bluffs, Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.056293,
+          44.646685
+        ],
+        "type": "Point"
+      },
+      "id": "address.9060063105468470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "505 Highway 118 W, Bracebridge, Ontario P1L 1N8, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.329706,
+          45.043639
+        ],
+        "type": "Point"
+      },
+      "id": "address.9998789080783110"
+    }
+  ],
+  "type": "FeatureCollection"
+}
